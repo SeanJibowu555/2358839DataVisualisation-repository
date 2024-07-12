@@ -1,0 +1,2382 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20241.24.0308.0326                               -->
+<workbook original-version='18.1' source-build='2024.1.1 (20241.24.0308.0326)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <BasicButtonObject />
+    <BasicButtonObjectTextSupport />
+    <DashboardGridOverlay />
+    <Extensions />
+    <Heatmap />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='Sleep_Efficiency_Updated (Sleep_Efficiency_Updated)' inline='true' name='federated.02dcroe1s9szfh1cuca2b12xyz8u' version='18.1'>
+      <connection class='federated' tableau-ri='true'>
+        <named-connections>
+          <named-connection caption='Sleep_Efficiency_Updated' name='excel-direct.00edkbl1b8a2er10ocp7v0ddj1tr'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='/Users/seanjibowu/Downloads/data visualisation coursework/Sleep_Efficiency_Updated.xls' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='excel-direct.00edkbl1b8a2er10ocp7v0ddj1tr' name='Sleep_Efficiency_Updated' table='[Sleep_Efficiency_Updated$]' type='table'>
+          <columns gridOrigin='A1:O619:no:A1:O619:0' header='yes' outcome='6'>
+            <column datatype='integer' name='ID' ordinal='0' />
+            <column datatype='integer' name='Age' ordinal='1' />
+            <column datatype='string' name='Gender' ordinal='2' />
+            <column datatype='datetime' name='Bedtime' ordinal='3' />
+            <column datatype='datetime' name='Wakeup time' ordinal='4' />
+            <column datatype='real' name='Sleep duration' ordinal='5' />
+            <column datatype='real' name='Sleep efficiency' ordinal='6' />
+            <column datatype='integer' name='REM sleep percentage' ordinal='7' />
+            <column datatype='integer' name='Deep sleep percentage' ordinal='8' />
+            <column datatype='integer' name='Light sleep percentage' ordinal='9' />
+            <column datatype='integer' name='Awakenings' ordinal='10' />
+            <column datatype='integer' name='Caffeine consumption' ordinal='11' />
+            <column datatype='integer' name='Alcohol consumption' ordinal='12' />
+            <column datatype='string' name='Smoking status' ordinal='13' />
+            <column datatype='integer' name='Exercise frequency' ordinal='14' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='excel-direct.00edkbl1b8a2er10ocp7v0ddj1tr' name='Sleep_Efficiency_Updated' table='[Sleep_Efficiency_Updated$]' type='table'>
+          <columns gridOrigin='A1:O619:no:A1:O619:0' header='yes' outcome='6'>
+            <column datatype='integer' name='ID' ordinal='0' />
+            <column datatype='integer' name='Age' ordinal='1' />
+            <column datatype='string' name='Gender' ordinal='2' />
+            <column datatype='datetime' name='Bedtime' ordinal='3' />
+            <column datatype='datetime' name='Wakeup time' ordinal='4' />
+            <column datatype='real' name='Sleep duration' ordinal='5' />
+            <column datatype='real' name='Sleep efficiency' ordinal='6' />
+            <column datatype='integer' name='REM sleep percentage' ordinal='7' />
+            <column datatype='integer' name='Deep sleep percentage' ordinal='8' />
+            <column datatype='integer' name='Light sleep percentage' ordinal='9' />
+            <column datatype='integer' name='Awakenings' ordinal='10' />
+            <column datatype='integer' name='Caffeine consumption' ordinal='11' />
+            <column datatype='integer' name='Alcohol consumption' ordinal='12' />
+            <column datatype='string' name='Smoking status' ordinal='13' />
+            <column datatype='integer' name='Exercise frequency' ordinal='14' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Sleep_Efficiency_Updated]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:O619:no:A1:O619:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ID]</local-name>
+            <parent-name>[Sleep_Efficiency_Updated]</parent-name>
+            <remote-alias>ID</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sleep!Efficiency!Updated_D33BAD466E8E424DBE0FCEF0C3DA1F37]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Age</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Age]</local-name>
+            <parent-name>[Sleep_Efficiency_Updated]</parent-name>
+            <remote-alias>Age</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sleep!Efficiency!Updated_D33BAD466E8E424DBE0FCEF0C3DA1F37]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Gender</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Gender]</local-name>
+            <parent-name>[Sleep_Efficiency_Updated]</parent-name>
+            <remote-alias>Gender</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RGB_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sleep!Efficiency!Updated_D33BAD466E8E424DBE0FCEF0C3DA1F37]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Bedtime</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Bedtime]</local-name>
+            <parent-name>[Sleep_Efficiency_Updated]</parent-name>
+            <remote-alias>Bedtime</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sleep!Efficiency!Updated_D33BAD466E8E424DBE0FCEF0C3DA1F37]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Wakeup time</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Wakeup time]</local-name>
+            <parent-name>[Sleep_Efficiency_Updated]</parent-name>
+            <remote-alias>Wakeup time</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sleep!Efficiency!Updated_D33BAD466E8E424DBE0FCEF0C3DA1F37]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sleep duration</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Sleep duration]</local-name>
+            <parent-name>[Sleep_Efficiency_Updated]</parent-name>
+            <remote-alias>Sleep duration</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sleep!Efficiency!Updated_D33BAD466E8E424DBE0FCEF0C3DA1F37]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sleep efficiency</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Sleep efficiency]</local-name>
+            <parent-name>[Sleep_Efficiency_Updated]</parent-name>
+            <remote-alias>Sleep efficiency</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sleep!Efficiency!Updated_D33BAD466E8E424DBE0FCEF0C3DA1F37]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>REM sleep percentage</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[REM sleep percentage]</local-name>
+            <parent-name>[Sleep_Efficiency_Updated]</parent-name>
+            <remote-alias>REM sleep percentage</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sleep!Efficiency!Updated_D33BAD466E8E424DBE0FCEF0C3DA1F37]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Deep sleep percentage</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Deep sleep percentage]</local-name>
+            <parent-name>[Sleep_Efficiency_Updated]</parent-name>
+            <remote-alias>Deep sleep percentage</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sleep!Efficiency!Updated_D33BAD466E8E424DBE0FCEF0C3DA1F37]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Light sleep percentage</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Light sleep percentage]</local-name>
+            <parent-name>[Sleep_Efficiency_Updated]</parent-name>
+            <remote-alias>Light sleep percentage</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sleep!Efficiency!Updated_D33BAD466E8E424DBE0FCEF0C3DA1F37]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Awakenings</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Awakenings]</local-name>
+            <parent-name>[Sleep_Efficiency_Updated]</parent-name>
+            <remote-alias>Awakenings</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sleep!Efficiency!Updated_D33BAD466E8E424DBE0FCEF0C3DA1F37]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Caffeine consumption</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Caffeine consumption]</local-name>
+            <parent-name>[Sleep_Efficiency_Updated]</parent-name>
+            <remote-alias>Caffeine consumption</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sleep!Efficiency!Updated_D33BAD466E8E424DBE0FCEF0C3DA1F37]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Alcohol consumption</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Alcohol consumption]</local-name>
+            <parent-name>[Sleep_Efficiency_Updated]</parent-name>
+            <remote-alias>Alcohol consumption</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sleep!Efficiency!Updated_D33BAD466E8E424DBE0FCEF0C3DA1F37]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Smoking status</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Smoking status]</local-name>
+            <parent-name>[Sleep_Efficiency_Updated]</parent-name>
+            <remote-alias>Smoking status</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RGB_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sleep!Efficiency!Updated_D33BAD466E8E424DBE0FCEF0C3DA1F37]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Exercise frequency</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Exercise frequency]</local-name>
+            <parent-name>[Sleep_Efficiency_Updated]</parent-name>
+            <remote-alias>Exercise frequency</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sleep!Efficiency!Updated_D33BAD466E8E424DBE0FCEF0C3DA1F37]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='integer' name='[Age]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Alcohol consumption]' role='measure' type='quantitative' />
+      <column caption='Alcohol no smoke CC  (copy)' datatype='real' name='[Alcohol smoke CC  (copy)_248612773970677784]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SQRT(0.0060231) * 1000' />
+      </column>
+      <column datatype='integer' name='[Awakenings]' role='measure' type='quantitative' />
+      <column caption='Caffeine no smoke CC' datatype='real' name='[Caffeine CC (copy)_248612773971783706]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='sqrt(0.162568) * 1000' />
+      </column>
+      <column datatype='integer' name='[Caffeine consumption]' role='measure' type='quantitative' />
+      <column caption='CORRELATION COEFFICIENT' datatype='integer' datatype-customized='true' name='[Calculation_1053983053469069312]' role='measure' type='ordinal'>
+        <calculation class='tableau' formula='sum(5-4)' />
+      </column>
+      <column caption='Difference between UH' datatype='real' name='[Calculation_1745918913695100928]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM(8.75-8.50)' />
+      </column>
+      <column caption='Corr Coeff Age  Sleep Efficiency' datatype='real' name='[Calculation_1745918913696108545]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='CORR([Age],[Sleep efficiency])' />
+      </column>
+      <column caption='Alcohol consumption r^2 smoke' datatype='real' name='[Calculation_1745918913699586052]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='avg' />
+      </column>
+      <column caption='Alcohol smoke CC ' datatype='real' name='[Calculation_248612773967564821]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SQRT(0.403649)' />
+      </column>
+      <column caption='Excercise NO smoke CC' datatype='real' name='[Calculation_248612773967822870]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SQRT(0.546619) * 1000' />
+      </column>
+      <column caption='Caffeine smoke CC' datatype='real' name='[Calculation_248612773967896599]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='sqrt(0.0455612)' />
+      </column>
+      <column caption='CorrCoeff Age Sleep Duration' datatype='real' name='[Correlation Coefficient Of Age against Sleep Efficiency (copy)_1745918913696321538]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='CORR([Age],[Sleep duration])' />
+      </column>
+      <column datatype='integer' name='[Deep sleep percentage]' role='measure' type='quantitative' />
+      <column caption='Excercise smoke CC ' datatype='real' name='[Excercise NO smoke CC (copy)_248612773971214361]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SQRT(0.0010234) * 1000' />
+      </column>
+      <column datatype='integer' name='[Exercise frequency]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[ID]' role='dimension' type='ordinal' />
+      <column datatype='integer' name='[Light sleep percentage]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[REM sleep percentage]' role='measure' type='quantitative' />
+      <column datatype='real' name='[Sleep duration]' role='measure' type='quantitative' />
+      <column datatype='real' name='[Sleep efficiency]' role='measure' type='quantitative' />
+      <column datatype='string' name='[Smoking status]' role='dimension' type='nominal' />
+      <_.fcp.ObjectModelTableType.true...column caption='Sleep_Efficiency_Updated' datatype='table' name='[__tableau_internal_object_id__].[Sleep!Efficiency!Updated_D33BAD466E8E424DBE0FCEF0C3DA1F37]' role='measure' type='quantitative' />
+      <column-instance column='[__tableau_internal_object_id__].[Sleep!Efficiency!Updated_D33BAD466E8E424DBE0FCEF0C3DA1F37]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:Sleep!Efficiency!Updated_D33BAD466E8E424DBE0FCEF0C3DA1F37:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Age]' derivation='Attribute' name='[attr:Age:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Alcohol consumption]' derivation='Attribute' name='[attr:Alcohol consumption:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Caffeine consumption]' derivation='Attribute' name='[attr:Caffeine consumption:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Exercise frequency]' derivation='Attribute' name='[attr:Exercise frequency:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Sleep efficiency]' derivation='Attribute' name='[attr:Sleep efficiency:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Age]' derivation='Avg' name='[avg:Age:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Alcohol consumption]' derivation='Avg' name='[avg:Alcohol consumption:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Caffeine consumption]' derivation='Avg' name='[avg:Caffeine consumption:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_248612773967896599]' derivation='Avg' name='[avg:Calculation_248612773967896599:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Exercise frequency]' derivation='Avg' name='[avg:Exercise frequency:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Sleep duration]' derivation='Avg' name='[avg:Sleep duration:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Sleep efficiency]' derivation='Avg' name='[avg:Sleep efficiency:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Age]' derivation='Count' name='[cnt:Age:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Alcohol consumption]' derivation='Count' name='[cnt:Alcohol consumption:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Caffeine consumption]' derivation='Count' name='[cnt:Caffeine consumption:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_1053983053469069312]' derivation='Count' name='[cnt:Calculation_1053983053469069312:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Exercise frequency]' derivation='Count' name='[cnt:Exercise frequency:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Sleep duration]' derivation='Count' name='[cnt:Sleep duration:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Sleep efficiency]' derivation='Count' name='[cnt:Sleep efficiency:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Alcohol consumption]' derivation='CountD' name='[ctd:Alcohol consumption:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Sleep efficiency]' derivation='CountD' name='[ctd:Sleep efficiency:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Age]' derivation='None' name='[none:Age:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Alcohol consumption]' derivation='None' name='[none:Alcohol consumption:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Caffeine consumption]' derivation='None' name='[none:Caffeine consumption:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_1053983053469069312]' derivation='None' name='[none:Calculation_1053983053469069312:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_248612773967564821]' derivation='None' name='[none:Calculation_248612773967564821:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_248612773967896599]' derivation='None' name='[none:Calculation_248612773967896599:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Exercise frequency]' derivation='None' name='[none:Exercise frequency:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Sleep duration]' derivation='None' name='[none:Sleep duration:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Sleep efficiency]' derivation='None' name='[none:Sleep efficiency:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Smoking status]' derivation='None' name='[none:Smoking status:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Alcohol consumption]' derivation='Avg' name='[pcto:avg:Alcohol consumption:qk]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Columns' type='PctTotal' />
+      </column-instance>
+      <column-instance column='[Caffeine consumption]' derivation='Avg' name='[pcto:avg:Caffeine consumption:qk]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Columns' type='PctTotal' />
+      </column-instance>
+      <column-instance column='[Exercise frequency]' derivation='Avg' name='[pcto:avg:Exercise frequency:qk]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Columns' type='PctTotal' />
+      </column-instance>
+      <column-instance column='[Exercise frequency]' derivation='Stdev' name='[pcto:std:Exercise frequency:qk]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Columns' type='PctTotal' />
+      </column-instance>
+      <column-instance column='[Alcohol consumption]' derivation='Avg' name='[rank:avg:Alcohol consumption:qk]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Columns' rank-options='Competition,Descending' type='Rank' />
+      </column-instance>
+      <column-instance column='[Caffeine consumption]' derivation='Avg' name='[rank:avg:Caffeine consumption:qk]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Columns' rank-options='Competition,Descending' type='Rank' />
+      </column-instance>
+      <column-instance column='[Exercise frequency]' derivation='Avg' name='[rank:avg:Exercise frequency:qk]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Columns' rank-options='Competition,Descending' type='Rank' />
+      </column-instance>
+      <column-instance column='[Exercise frequency]' derivation='Count' name='[rank:cnt:Exercise frequency:qk]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Columns' rank-options='Competition,Descending' type='Rank' />
+      </column-instance>
+      <column-instance column='[Alcohol consumption]' derivation='Stdev' name='[rank:std:Alcohol consumption:qk]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Columns' rank-options='Competition,Descending' type='Rank' />
+      </column-instance>
+      <column-instance column='[Caffeine consumption]' derivation='Stdev' name='[rank:std:Caffeine consumption:qk]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Columns' rank-options='Competition,Descending' type='Rank' />
+      </column-instance>
+      <column-instance column='[Exercise frequency]' derivation='Stdev' name='[rank:std:Exercise frequency:qk]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Columns' rank-options='Competition,Descending' type='Rank' />
+      </column-instance>
+      <column-instance column='[Alcohol consumption]' derivation='StdevP' name='[rank:stp:Alcohol consumption:qk]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Columns' rank-options='Competition,Descending' type='Rank' />
+      </column-instance>
+      <column-instance column='[Exercise frequency]' derivation='StdevP' name='[rank:stp:Exercise frequency:qk]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Columns' rank-options='Competition,Descending' type='Rank' />
+      </column-instance>
+      <column-instance column='[Age]' derivation='Stdev' name='[std:Age:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Alcohol consumption]' derivation='Stdev' name='[std:Alcohol consumption:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Caffeine consumption]' derivation='Stdev' name='[std:Caffeine consumption:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Exercise frequency]' derivation='Stdev' name='[std:Exercise frequency:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Sleep efficiency]' derivation='Stdev' name='[std:Sleep efficiency:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Alcohol consumption]' derivation='StdevP' name='[stp:Alcohol consumption:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Caffeine consumption]' derivation='StdevP' name='[stp:Caffeine consumption:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Exercise frequency]' derivation='StdevP' name='[stp:Exercise frequency:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Age]' derivation='Sum' name='[sum:Age:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Alcohol consumption]' derivation='Sum' name='[sum:Alcohol consumption:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Awakenings]' derivation='Sum' name='[sum:Awakenings:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Caffeine consumption]' derivation='Sum' name='[sum:Caffeine consumption:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_1053983053469069312]' derivation='Sum' name='[sum:Calculation_1053983053469069312:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_248612773967564821]' derivation='Sum' name='[sum:Calculation_248612773967564821:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_248612773967896599]' derivation='Sum' name='[sum:Calculation_248612773967896599:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Deep sleep percentage]' derivation='Sum' name='[sum:Deep sleep percentage:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Exercise frequency]' derivation='Sum' name='[sum:Exercise frequency:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Light sleep percentage]' derivation='Sum' name='[sum:Light sleep percentage:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[REM sleep percentage]' derivation='Sum' name='[sum:REM sleep percentage:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Sleep duration]' derivation='Sum' name='[sum:Sleep duration:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Sleep efficiency]' derivation='Sum' name='[sum:Sleep efficiency:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_1053983053469069312]' derivation='User' name='[usr:Calculation_1053983053469069312:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Alcohol consumption]' derivation='Var' name='[var:Alcohol consumption:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Caffeine consumption]' derivation='Var' name='[var:Caffeine consumption:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_1053983053469069312]' derivation='Var' name='[var:Calculation_1053983053469069312:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_248612773967564821]' derivation='Var' name='[var:Calculation_248612773967564821:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_248612773967896599]' derivation='Var' name='[var:Calculation_248612773967896599:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Exercise frequency]' derivation='Var' name='[var:Exercise frequency:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Sleep efficiency]' derivation='Var' name='[var:Sleep efficiency:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Alcohol consumption]' derivation='VarP' name='[vrp:Alcohol consumption:qk]' pivot='key' type='quantitative' />
+      <group caption='Smoking status Set' name='[Smoking status Set]' name-style='unqualified' user:ui-builder='filter-group'>
+        <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+          <groupfilter function='level-members' level='[none:Smoking status:nk]' />
+          <groupfilter function='member' level='[none:Smoking status:nk]' member='%null%' />
+        </groupfilter>
+      </group>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='ordinal' measure-ordering='ordinal' rowDisplayCount='618' show-aliased-fields='true' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='shape' field='[:Measure Names]' type='shape'>
+            <map to='asterisk'>
+              <bucket>&quot;[federated.02dcroe1s9szfh1cuca2b12xyz8u].[sum:Calculation_1901222788072873984:qk]&quot;</bucket>
+            </map>
+            <map to='circle'>
+              <bucket>&quot;[federated.02dcroe1s9szfh1cuca2b12xyz8u].[attr:Age:qk]&quot;</bucket>
+            </map>
+            <map to='circle'>
+              <bucket>&quot;[federated.02dcroe1s9szfh1cuca2b12xyz8u].[avg:Age:qk]&quot;</bucket>
+            </map>
+            <map to='circle'>
+              <bucket>&quot;[federated.02dcroe1s9szfh1cuca2b12xyz8u].[avg:Sleep duration:qk]&quot;</bucket>
+            </map>
+            <map to='circle'>
+              <bucket>&quot;[federated.02dcroe1s9szfh1cuca2b12xyz8u].[cnt:Age:qk]&quot;</bucket>
+            </map>
+            <map to='circle'>
+              <bucket>&quot;[federated.02dcroe1s9szfh1cuca2b12xyz8u].[cnt:Sleep duration:qk]&quot;</bucket>
+            </map>
+            <map to='circle'>
+              <bucket>&quot;[federated.02dcroe1s9szfh1cuca2b12xyz8u].[none:Age:qk]&quot;</bucket>
+            </map>
+            <map to='circle'>
+              <bucket>&quot;[federated.02dcroe1s9szfh1cuca2b12xyz8u].[none:Sleep duration:qk]&quot;</bucket>
+            </map>
+            <map to='circle'>
+              <bucket>&quot;[federated.02dcroe1s9szfh1cuca2b12xyz8u].[std:Age:qk]&quot;</bucket>
+            </map>
+            <map to='circle'>
+              <bucket>&quot;[federated.02dcroe1s9szfh1cuca2b12xyz8u].[sum:Age:qk]&quot;</bucket>
+            </map>
+            <map to='circle'>
+              <bucket>&quot;[federated.02dcroe1s9szfh1cuca2b12xyz8u].[sum:Sleep duration:qk]&quot;</bucket>
+            </map>
+            <map to='diamond'>
+              <bucket>&quot;[federated.02dcroe1s9szfh1cuca2b12xyz8u].[__tableau_internal_object_id__].[cnt:Sleep!Efficiency!Updated_D33BAD466E8E424DBE0FCEF0C3DA1F37:qk]&quot;</bucket>
+            </map>
+            <map to='down-triangle'>
+              <bucket>&quot;[federated.02dcroe1s9szfh1cuca2b12xyz8u].[attr:Exercise frequency:qk]&quot;</bucket>
+            </map>
+            <map to='down-triangle'>
+              <bucket>&quot;[federated.02dcroe1s9szfh1cuca2b12xyz8u].[avg:Exercise frequency:qk]&quot;</bucket>
+            </map>
+            <map to='down-triangle'>
+              <bucket>&quot;[federated.02dcroe1s9szfh1cuca2b12xyz8u].[cnt:Exercise frequency:qk]&quot;</bucket>
+            </map>
+            <map to='down-triangle'>
+              <bucket>&quot;[federated.02dcroe1s9szfh1cuca2b12xyz8u].[none:Exercise frequency:qk]&quot;</bucket>
+            </map>
+            <map to='down-triangle'>
+              <bucket>&quot;[federated.02dcroe1s9szfh1cuca2b12xyz8u].[pcto:avg:Exercise frequency:qk]&quot;</bucket>
+            </map>
+            <map to='down-triangle'>
+              <bucket>&quot;[federated.02dcroe1s9szfh1cuca2b12xyz8u].[pcto:std:Exercise frequency:qk]&quot;</bucket>
+            </map>
+            <map to='down-triangle'>
+              <bucket>&quot;[federated.02dcroe1s9szfh1cuca2b12xyz8u].[rank:avg:Exercise frequency:qk]&quot;</bucket>
+            </map>
+            <map to='down-triangle'>
+              <bucket>&quot;[federated.02dcroe1s9szfh1cuca2b12xyz8u].[rank:cnt:Exercise frequency:qk]&quot;</bucket>
+            </map>
+            <map to='down-triangle'>
+              <bucket>&quot;[federated.02dcroe1s9szfh1cuca2b12xyz8u].[rank:std:Exercise frequency:qk]&quot;</bucket>
+            </map>
+            <map to='down-triangle'>
+              <bucket>&quot;[federated.02dcroe1s9szfh1cuca2b12xyz8u].[rank:stp:Exercise frequency:qk]&quot;</bucket>
+            </map>
+            <map to='down-triangle'>
+              <bucket>&quot;[federated.02dcroe1s9szfh1cuca2b12xyz8u].[std:Exercise frequency:qk]&quot;</bucket>
+            </map>
+            <map to='down-triangle'>
+              <bucket>&quot;[federated.02dcroe1s9szfh1cuca2b12xyz8u].[stp:Exercise frequency:qk]&quot;</bucket>
+            </map>
+            <map to='down-triangle'>
+              <bucket>&quot;[federated.02dcroe1s9szfh1cuca2b12xyz8u].[sum:Exercise frequency:qk]&quot;</bucket>
+            </map>
+            <map to='down-triangle'>
+              <bucket>&quot;[federated.02dcroe1s9szfh1cuca2b12xyz8u].[var:Exercise frequency:qk]&quot;</bucket>
+            </map>
+            <map to='left-triangle'>
+              <bucket>&quot;[federated.02dcroe1s9szfh1cuca2b12xyz8u].[sum:Light sleep percentage:qk]&quot;</bucket>
+            </map>
+            <map to='plus'>
+              <bucket>&quot;[federated.02dcroe1s9szfh1cuca2b12xyz8u].[sum:Awakenings:qk]&quot;</bucket>
+            </map>
+            <map to='right-triangle'>
+              <bucket>&quot;[federated.02dcroe1s9szfh1cuca2b12xyz8u].[sum:REM sleep percentage:qk]&quot;</bucket>
+            </map>
+            <map to='square'>
+              <bucket>&quot;[federated.02dcroe1s9szfh1cuca2b12xyz8u].[attr:Alcohol consumption:qk]&quot;</bucket>
+            </map>
+            <map to='square'>
+              <bucket>&quot;[federated.02dcroe1s9szfh1cuca2b12xyz8u].[attr:Sleep efficiency:qk]&quot;</bucket>
+            </map>
+            <map to='square'>
+              <bucket>&quot;[federated.02dcroe1s9szfh1cuca2b12xyz8u].[avg:Alcohol consumption:qk]&quot;</bucket>
+            </map>
+            <map to='square'>
+              <bucket>&quot;[federated.02dcroe1s9szfh1cuca2b12xyz8u].[avg:Sleep efficiency:qk]&quot;</bucket>
+            </map>
+            <map to='square'>
+              <bucket>&quot;[federated.02dcroe1s9szfh1cuca2b12xyz8u].[cnt:Alcohol consumption:qk]&quot;</bucket>
+            </map>
+            <map to='square'>
+              <bucket>&quot;[federated.02dcroe1s9szfh1cuca2b12xyz8u].[cnt:Sleep efficiency:qk]&quot;</bucket>
+            </map>
+            <map to='square'>
+              <bucket>&quot;[federated.02dcroe1s9szfh1cuca2b12xyz8u].[ctd:Alcohol consumption:qk]&quot;</bucket>
+            </map>
+            <map to='square'>
+              <bucket>&quot;[federated.02dcroe1s9szfh1cuca2b12xyz8u].[ctd:Sleep efficiency:qk]&quot;</bucket>
+            </map>
+            <map to='square'>
+              <bucket>&quot;[federated.02dcroe1s9szfh1cuca2b12xyz8u].[none:Alcohol consumption:qk]&quot;</bucket>
+            </map>
+            <map to='square'>
+              <bucket>&quot;[federated.02dcroe1s9szfh1cuca2b12xyz8u].[none:Sleep efficiency:qk]&quot;</bucket>
+            </map>
+            <map to='square'>
+              <bucket>&quot;[federated.02dcroe1s9szfh1cuca2b12xyz8u].[pcto:avg:Alcohol consumption:qk]&quot;</bucket>
+            </map>
+            <map to='square'>
+              <bucket>&quot;[federated.02dcroe1s9szfh1cuca2b12xyz8u].[rank:avg:Alcohol consumption:qk]&quot;</bucket>
+            </map>
+            <map to='square'>
+              <bucket>&quot;[federated.02dcroe1s9szfh1cuca2b12xyz8u].[rank:std:Alcohol consumption:qk]&quot;</bucket>
+            </map>
+            <map to='square'>
+              <bucket>&quot;[federated.02dcroe1s9szfh1cuca2b12xyz8u].[rank:stp:Alcohol consumption:qk]&quot;</bucket>
+            </map>
+            <map to='square'>
+              <bucket>&quot;[federated.02dcroe1s9szfh1cuca2b12xyz8u].[std:Alcohol consumption:qk]&quot;</bucket>
+            </map>
+            <map to='square'>
+              <bucket>&quot;[federated.02dcroe1s9szfh1cuca2b12xyz8u].[std:Sleep efficiency:qk]&quot;</bucket>
+            </map>
+            <map to='square'>
+              <bucket>&quot;[federated.02dcroe1s9szfh1cuca2b12xyz8u].[stp:Alcohol consumption:qk]&quot;</bucket>
+            </map>
+            <map to='square'>
+              <bucket>&quot;[federated.02dcroe1s9szfh1cuca2b12xyz8u].[sum:Alcohol consumption:qk]&quot;</bucket>
+            </map>
+            <map to='square'>
+              <bucket>&quot;[federated.02dcroe1s9szfh1cuca2b12xyz8u].[sum:Sleep efficiency:qk]&quot;</bucket>
+            </map>
+            <map to='square'>
+              <bucket>&quot;[federated.02dcroe1s9szfh1cuca2b12xyz8u].[var:Alcohol consumption:qk]&quot;</bucket>
+            </map>
+            <map to='square'>
+              <bucket>&quot;[federated.02dcroe1s9szfh1cuca2b12xyz8u].[var:Sleep efficiency:qk]&quot;</bucket>
+            </map>
+            <map to='square'>
+              <bucket>&quot;[federated.02dcroe1s9szfh1cuca2b12xyz8u].[vrp:Alcohol consumption:qk]&quot;</bucket>
+            </map>
+            <map to='times'>
+              <bucket>&quot;[federated.02dcroe1s9szfh1cuca2b12xyz8u].[attr:Caffeine consumption:qk]&quot;</bucket>
+            </map>
+            <map to='times'>
+              <bucket>&quot;[federated.02dcroe1s9szfh1cuca2b12xyz8u].[avg:Caffeine consumption:qk]&quot;</bucket>
+            </map>
+            <map to='times'>
+              <bucket>&quot;[federated.02dcroe1s9szfh1cuca2b12xyz8u].[cnt:Caffeine consumption:qk]&quot;</bucket>
+            </map>
+            <map to='times'>
+              <bucket>&quot;[federated.02dcroe1s9szfh1cuca2b12xyz8u].[none:Caffeine consumption:qk]&quot;</bucket>
+            </map>
+            <map to='times'>
+              <bucket>&quot;[federated.02dcroe1s9szfh1cuca2b12xyz8u].[pcto:avg:Caffeine consumption:qk]&quot;</bucket>
+            </map>
+            <map to='times'>
+              <bucket>&quot;[federated.02dcroe1s9szfh1cuca2b12xyz8u].[rank:avg:Caffeine consumption:qk]&quot;</bucket>
+            </map>
+            <map to='times'>
+              <bucket>&quot;[federated.02dcroe1s9szfh1cuca2b12xyz8u].[rank:std:Caffeine consumption:qk]&quot;</bucket>
+            </map>
+            <map to='times'>
+              <bucket>&quot;[federated.02dcroe1s9szfh1cuca2b12xyz8u].[std:Caffeine consumption:qk]&quot;</bucket>
+            </map>
+            <map to='times'>
+              <bucket>&quot;[federated.02dcroe1s9szfh1cuca2b12xyz8u].[stp:Caffeine consumption:qk]&quot;</bucket>
+            </map>
+            <map to='times'>
+              <bucket>&quot;[federated.02dcroe1s9szfh1cuca2b12xyz8u].[sum:Caffeine consumption:qk]&quot;</bucket>
+            </map>
+            <map to='times'>
+              <bucket>&quot;[federated.02dcroe1s9szfh1cuca2b12xyz8u].[var:Caffeine consumption:qk]&quot;</bucket>
+            </map>
+            <map to='triangle'>
+              <bucket>&quot;[federated.02dcroe1s9szfh1cuca2b12xyz8u].[sum:Deep sleep percentage:qk]&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Smoking status:nk]' palette='tableau-10' type='palette'>
+            <map to='#00d217'>
+              <bucket>&quot;Yes&quot;</bucket>
+            </map>
+            <map to='#c10600'>
+              <bucket>&quot;No&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.02dcroe1s9szfh1cuca2b12xyz8u]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.02dcroe1s9szfh1cuca2b12xyz8u].[avg:Calculation_248612773967896599:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.02dcroe1s9szfh1cuca2b12xyz8u].[cnt:Calculation_1053983053469069312:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.02dcroe1s9szfh1cuca2b12xyz8u].[none:Calculation_1053983053469069312:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.02dcroe1s9szfh1cuca2b12xyz8u].[none:Calculation_248612773967564821:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.02dcroe1s9szfh1cuca2b12xyz8u].[none:Calculation_248612773967896599:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.02dcroe1s9szfh1cuca2b12xyz8u].[sum:Alcohol consumption:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.02dcroe1s9szfh1cuca2b12xyz8u].[sum:Calculation_1053983053469069312:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.02dcroe1s9szfh1cuca2b12xyz8u].[sum:Calculation_248612773967564821:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.02dcroe1s9szfh1cuca2b12xyz8u].[sum:Calculation_248612773967896599:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.02dcroe1s9szfh1cuca2b12xyz8u].[usr:Calculation_1053983053469069312:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.02dcroe1s9szfh1cuca2b12xyz8u].[var:Calculation_1053983053469069312:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.02dcroe1s9szfh1cuca2b12xyz8u].[var:Calculation_248612773967896599:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.02dcroe1s9szfh1cuca2b12xyz8u].[cnt:Caffeine consumption:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.02dcroe1s9szfh1cuca2b12xyz8u].[none:Caffeine consumption:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.02dcroe1s9szfh1cuca2b12xyz8u].[pcto:avg:Caffeine consumption:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.02dcroe1s9szfh1cuca2b12xyz8u].[rank:avg:Caffeine consumption:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.02dcroe1s9szfh1cuca2b12xyz8u].[rank:std:Caffeine consumption:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.02dcroe1s9szfh1cuca2b12xyz8u].[std:Caffeine consumption:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.02dcroe1s9szfh1cuca2b12xyz8u].[stp:Caffeine consumption:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.02dcroe1s9szfh1cuca2b12xyz8u].[sum:Caffeine consumption:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.02dcroe1s9szfh1cuca2b12xyz8u].[var:Caffeine consumption:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.02dcroe1s9szfh1cuca2b12xyz8u].[cnt:Exercise frequency:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.02dcroe1s9szfh1cuca2b12xyz8u].[none:Exercise frequency:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.02dcroe1s9szfh1cuca2b12xyz8u].[pcto:avg:Exercise frequency:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.02dcroe1s9szfh1cuca2b12xyz8u].[pcto:std:Exercise frequency:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.02dcroe1s9szfh1cuca2b12xyz8u].[rank:avg:Exercise frequency:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.02dcroe1s9szfh1cuca2b12xyz8u].[rank:cnt:Exercise frequency:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.02dcroe1s9szfh1cuca2b12xyz8u].[rank:std:Exercise frequency:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.02dcroe1s9szfh1cuca2b12xyz8u].[rank:stp:Exercise frequency:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.02dcroe1s9szfh1cuca2b12xyz8u].[std:Exercise frequency:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.02dcroe1s9szfh1cuca2b12xyz8u].[stp:Exercise frequency:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.02dcroe1s9szfh1cuca2b12xyz8u].[sum:Exercise frequency:qk]&quot;</bucket>
+            </map>
+            <map to='#956ce6'>
+              <bucket>&quot;[federated.02dcroe1s9szfh1cuca2b12xyz8u].[avg:Sleep duration:qk]&quot;</bucket>
+            </map>
+            <map to='#9c755f'>
+              <bucket>&quot;[federated.02dcroe1s9szfh1cuca2b12xyz8u].[avg:Caffeine consumption:qk]&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;[federated.02dcroe1s9szfh1cuca2b12xyz8u].[avg:Alcohol consumption:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.02dcroe1s9szfh1cuca2b12xyz8u].[cnt:Alcohol consumption:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.02dcroe1s9szfh1cuca2b12xyz8u].[none:Alcohol consumption:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.02dcroe1s9szfh1cuca2b12xyz8u].[pcto:avg:Alcohol consumption:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.02dcroe1s9szfh1cuca2b12xyz8u].[rank:avg:Alcohol consumption:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.02dcroe1s9szfh1cuca2b12xyz8u].[rank:std:Alcohol consumption:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.02dcroe1s9szfh1cuca2b12xyz8u].[rank:stp:Alcohol consumption:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.02dcroe1s9szfh1cuca2b12xyz8u].[std:Alcohol consumption:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.02dcroe1s9szfh1cuca2b12xyz8u].[stp:Alcohol consumption:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.02dcroe1s9szfh1cuca2b12xyz8u].[var:Alcohol consumption:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.02dcroe1s9szfh1cuca2b12xyz8u].[attr:Sleep efficiency:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.02dcroe1s9szfh1cuca2b12xyz8u].[avg:Sleep efficiency:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.02dcroe1s9szfh1cuca2b12xyz8u].[cnt:Sleep efficiency:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.02dcroe1s9szfh1cuca2b12xyz8u].[ctd:Sleep efficiency:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.02dcroe1s9szfh1cuca2b12xyz8u].[none:Sleep duration:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.02dcroe1s9szfh1cuca2b12xyz8u].[none:Sleep efficiency:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.02dcroe1s9szfh1cuca2b12xyz8u].[std:Sleep efficiency:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.02dcroe1s9szfh1cuca2b12xyz8u].[sum:Sleep duration:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.02dcroe1s9szfh1cuca2b12xyz8u].[sum:Sleep efficiency:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.02dcroe1s9szfh1cuca2b12xyz8u].[var:Calculation_248612773967564821:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.02dcroe1s9szfh1cuca2b12xyz8u].[var:Sleep efficiency:qk]&quot;</bucket>
+            </map>
+            <map to='#ff9da7'>
+              <bucket>&quot;[federated.02dcroe1s9szfh1cuca2b12xyz8u].[avg:Exercise frequency:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United Kingdom&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <field-sort-info field-sort-order-type='custom-order'>
+        <field-sort-custom-order field='Age' />
+        <field-sort-custom-order field='Calculation_1901222788072873984' />
+        <field-sort-custom-order field='Alcohol consumption' />
+        <field-sort-custom-order field='Awakenings' />
+        <field-sort-custom-order field='Bedtime' />
+        <field-sort-custom-order field='Caffeine consumption' />
+        <field-sort-custom-order field='Deep sleep percentage' />
+        <field-sort-custom-order field='Exercise frequency' />
+        <field-sort-custom-order field='Gender' />
+        <field-sort-custom-order field='ID' />
+        <field-sort-custom-order field='Light sleep percentage' />
+        <field-sort-custom-order field='REM sleep percentage' />
+        <field-sort-custom-order field='Sleep duration' />
+        <field-sort-custom-order field='Sleep efficiency' />
+        <field-sort-custom-order field='Smoking status' />
+        <field-sort-custom-order field='Wakeup time' />
+      </field-sort-info>
+      <filter class='quantitative' column='[Age]' filter-group='2' included-values='non-null' />
+      <filter class='quantitative' column='[Alcohol consumption]' filter-group='2' included-values='non-null' />
+      <filter class='quantitative' column='[Awakenings]' filter-group='2' included-values='non-null' />
+      <filter class='quantitative' column='[Caffeine consumption]' filter-group='2' included-values='non-null' />
+      <filter class='quantitative' column='[Deep sleep percentage]' filter-group='2' included-values='non-null' />
+      <filter class='quantitative' column='[Exercise frequency]' filter-group='2' included-values='non-null' />
+      <filter class='quantitative' column='[Light sleep percentage]' filter-group='2' included-values='non-null' />
+      <filter class='quantitative' column='[REM sleep percentage]' filter-group='2' included-values='non-null' />
+      <filter class='quantitative' column='[Sleep duration]' filter-group='2' included-values='non-null' />
+      <filter class='quantitative' column='[Sleep efficiency]' filter-group='2' included-values='non-null' />
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Sleep_Efficiency_Updated' id='Sleep!Efficiency!Updated_D33BAD466E8E424DBE0FCEF0C3DA1F37'>
+            <properties context=''>
+              <relation connection='excel-direct.00edkbl1b8a2er10ocp7v0ddj1tr' name='Sleep_Efficiency_Updated' table='[Sleep_Efficiency_Updated$]' type='table'>
+                <columns gridOrigin='A1:O619:no:A1:O619:0' header='yes' outcome='6'>
+                  <column datatype='integer' name='ID' ordinal='0' />
+                  <column datatype='integer' name='Age' ordinal='1' />
+                  <column datatype='string' name='Gender' ordinal='2' />
+                  <column datatype='datetime' name='Bedtime' ordinal='3' />
+                  <column datatype='datetime' name='Wakeup time' ordinal='4' />
+                  <column datatype='real' name='Sleep duration' ordinal='5' />
+                  <column datatype='real' name='Sleep efficiency' ordinal='6' />
+                  <column datatype='integer' name='REM sleep percentage' ordinal='7' />
+                  <column datatype='integer' name='Deep sleep percentage' ordinal='8' />
+                  <column datatype='integer' name='Light sleep percentage' ordinal='9' />
+                  <column datatype='integer' name='Awakenings' ordinal='10' />
+                  <column datatype='integer' name='Caffeine consumption' ordinal='11' />
+                  <column datatype='integer' name='Alcohol consumption' ordinal='12' />
+                  <column datatype='string' name='Smoking status' ordinal='13' />
+                  <column datatype='integer' name='Exercise frequency' ordinal='14' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <actions>
+    <action caption='Highlight 1 (generated)' name='[Action1_D6839ACE6554468EBCE6BDA523746298]'>
+      <activation auto-clear='true' type='on-select' />
+      <source type='sheet' worksheet='Q1' />
+      <command command='tsc:brush'>
+        <param name='field-captions' value='Smoking status' />
+        <param name='target' value='Q1' />
+      </command>
+    </action>
+    <action caption='Highlight 2 (generated)' name='[Action2_D16AA595ADD4483582A2B6794F24E56F]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='NVNSE Dashboard' type='sheet' />
+      <command command='tsc:brush'>
+        <param name='field-captions' value='Smoking status' />
+        <param name='target' value='NVNSE Dashboard' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='Q1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1'>Æ&#10;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sleep_Efficiency_Updated (Sleep_Efficiency_Updated)' name='federated.02dcroe1s9szfh1cuca2b12xyz8u' />
+          </datasources>
+          <datasource-dependencies datasource='federated.02dcroe1s9szfh1cuca2b12xyz8u'>
+            <column datatype='integer' name='[Age]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Sleep duration]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Smoking status]' role='dimension' type='nominal' />
+            <column-instance column='[Age]' derivation='None' name='[none:Age:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Sleep duration]' derivation='None' name='[none:Sleep duration:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Smoking status]' derivation='None' name='[none:Smoking status:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.02dcroe1s9szfh1cuca2b12xyz8u].[none:Age:qk]' filter-group='3' included-values='in-range-or-null'>
+            <min>18</min>
+            <max>65</max>
+          </filter>
+          <slices>
+            <column>[federated.02dcroe1s9szfh1cuca2b12xyz8u].[none:Age:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.02dcroe1s9szfh1cuca2b12xyz8u].[none:Sleep duration:qk]' field-type='quantitative' max='10.292221084953939' min='0.0' range-type='fixed' scope='rows' type='space' />
+            <format attr='title' class='0' field='[federated.02dcroe1s9szfh1cuca2b12xyz8u].[none:Sleep duration:qk]' scope='rows' value=' Sleep Duration (Hrs)' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <color column='[federated.02dcroe1s9szfh1cuca2b12xyz8u].[none:Smoking status:nk]' />
+              <lod column='[federated.02dcroe1s9szfh1cuca2b12xyz8u].[none:Smoking status:nk]' />
+            </encodings>
+            <reference-line axis-column='[federated.02dcroe1s9szfh1cuca2b12xyz8u].[none:Sleep duration:qk]' boxplot-mark-exclusion='false' boxplot-whisker-type='standard' enable-instant-analytics='true' formula='average' id='refline0' label-type='automatic' probability='95' scope='per-cell' symmetric='false' value-column='[federated.02dcroe1s9szfh1cuca2b12xyz8u].[none:Sleep duration:qk]' z-order='1' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.25' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.02dcroe1s9szfh1cuca2b12xyz8u].[none:Sleep duration:qk]</rows>
+        <cols>[federated.02dcroe1s9szfh1cuca2b12xyz8u].[none:Smoking status:nk]</cols>
+        <tooltip-style tooltip-mode='sticky' />
+      </table>
+      <simple-id uuid='{1A0911D9-9744-4586-982C-06182EF20999}' />
+    </worksheet>
+    <worksheet name='Q2'>
+      <layout-options>
+        <title>
+          <formatted-text />
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sleep_Efficiency_Updated (Sleep_Efficiency_Updated)' name='federated.02dcroe1s9szfh1cuca2b12xyz8u' />
+          </datasources>
+          <datasource-dependencies datasource='federated.02dcroe1s9szfh1cuca2b12xyz8u'>
+            <column datatype='integer' name='[Age]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Sleep duration]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Sleep efficiency]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Smoking status]' role='dimension' type='nominal' />
+            <column-instance column='[Age]' derivation='None' name='[none:Age:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Sleep duration]' derivation='None' name='[none:Sleep duration:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Sleep efficiency]' derivation='None' name='[none:Sleep efficiency:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Smoking status]' derivation='None' name='[none:Smoking status:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.02dcroe1s9szfh1cuca2b12xyz8u].[none:Age:qk]' filter-group='3' included-values='in-range-or-null'>
+            <min>18</min>
+            <max>65</max>
+          </filter>
+          <slices>
+            <column>[federated.02dcroe1s9szfh1cuca2b12xyz8u].[none:Age:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.02dcroe1s9szfh1cuca2b12xyz8u].[none:Sleep duration:qk]' field-type='quantitative' fold='true' max='11.0' min='0.0' range-type='fixed' scope='rows' type='space' />
+            <encoding attr='space' class='0' field='[federated.02dcroe1s9szfh1cuca2b12xyz8u].[none:Sleep efficiency:qk]' field-type='quantitative' max='1.0204361233480175' min='0.0' range-type='fixed' scope='rows' type='space' />
+            <encoding attr='space' class='0' field='[federated.02dcroe1s9szfh1cuca2b12xyz8u].[none:Age:qk]' field-type='quantitative' max='68' min='0' range-type='fixed' scope='cols' type='space' />
+            <format attr='title' class='0' field='[federated.02dcroe1s9szfh1cuca2b12xyz8u].[none:Sleep duration:qk]' scope='rows' value='Sleep duration (Hrs)' />
+          </style-rule>
+          <style-rule element='refboxplot'>
+            <format attr='boxplot-style' id='refline0' value='glass' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='23' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <dropline drop-when='selected' haslabel='false' x-axis='true' y-axis='true' />
+            <trendline enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='linear' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='shape' value='asterisk' />
+                <format attr='mark-labels-show' value='false' />
+                <format attr='density-intensity' value='0.31181144714355469' />
+                <format attr='density-kernel-size' value='2' />
+                <format attr='mark-transparency' value='255' />
+                <format attr='mark-color' value='#000000' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='24' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.02dcroe1s9szfh1cuca2b12xyz8u].[none:Sleep efficiency:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <trendline enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='linear' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='shape' value='square' />
+                <format attr='density-intensity' value='0.31181144714355469' />
+                <format attr='density-kernel-size' value='2' />
+                <format attr='mark-transparency' value='255' />
+                <format attr='mark-color' value='#e15759' />
+                <format attr='mark-labels-show' value='false' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='trendline'>
+                <format attr='stroke-size' value='5' />
+                <format attr='stroke-color' value='#e1575967' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='25' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.02dcroe1s9szfh1cuca2b12xyz8u].[none:Sleep duration:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <dropline drop-when='selected' haslabel='false' x-axis='true' y-axis='true' />
+            <trendline enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='linear' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='shape' value=':filled/times' />
+                <format attr='mark-labels-show' value='false' />
+                <format attr='density-intensity' value='0.31181144714355469' />
+                <format attr='density-kernel-size' value='2' />
+                <format attr='mark-transparency' value='255' />
+                <format attr='mark-color' value='#000000' />
+              </style-rule>
+              <style-rule element='trendline'>
+                <format attr='stroke-size' value='5' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.02dcroe1s9szfh1cuca2b12xyz8u].[none:Sleep efficiency:qk] + [federated.02dcroe1s9szfh1cuca2b12xyz8u].[none:Sleep duration:qk])</rows>
+        <cols>[federated.02dcroe1s9szfh1cuca2b12xyz8u].[none:Age:qk]</cols>
+        <pages>
+          <column>[federated.02dcroe1s9szfh1cuca2b12xyz8u].[none:Smoking status:nk]</column>
+        </pages>
+      </table>
+      <simple-id uuid='{A3336824-4AF8-4E56-BBA8-D24115FF5C59}' />
+    </worksheet>
+    <worksheet name='Q3'>
+      <layout-options>
+        <title>
+          <formatted-text />
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sleep_Efficiency_Updated (Sleep_Efficiency_Updated)' name='federated.02dcroe1s9szfh1cuca2b12xyz8u' />
+          </datasources>
+          <datasource-dependencies datasource='federated.02dcroe1s9szfh1cuca2b12xyz8u'>
+            <column datatype='string' name='[Gender]' role='dimension' type='nominal' />
+            <column datatype='real' name='[Sleep efficiency]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Smoking status]' role='dimension' type='nominal' />
+            <column-instance column='[Sleep efficiency]' derivation='Avg' name='[avg:Sleep efficiency:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Gender]' derivation='None' name='[none:Gender:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Smoking status]' derivation='None' name='[none:Smoking status:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.02dcroe1s9szfh1cuca2b12xyz8u].[avg:Sleep efficiency:qk]' field-type='quantitative' max='1.0305321759494943' min='-2.2204460492503131e-16' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.02dcroe1s9szfh1cuca2b12xyz8u].[none:Gender:nk]' />
+              <text column='[federated.02dcroe1s9szfh1cuca2b12xyz8u].[avg:Sleep efficiency:qk]' />
+            </encodings>
+            <reference-line axis-column='[federated.02dcroe1s9szfh1cuca2b12xyz8u].[avg:Sleep efficiency:qk]' boxplot-mark-exclusion='false' boxplot-whisker-type='standard' enable-instant-analytics='true' formula='average' id='refline0' label-type='automatic' probability='95' scope='per-cell' symmetric='false' value-column='[federated.02dcroe1s9szfh1cuca2b12xyz8u].[avg:Sleep efficiency:qk]' z-order='1' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.25' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.02dcroe1s9szfh1cuca2b12xyz8u].[avg:Sleep efficiency:qk]</rows>
+        <cols>[federated.02dcroe1s9szfh1cuca2b12xyz8u].[none:Gender:nk]</cols>
+        <pages>
+          <column>[federated.02dcroe1s9szfh1cuca2b12xyz8u].[none:Smoking status:nk]</column>
+        </pages>
+      </table>
+      <simple-id uuid='{553578DC-1D9D-4B43-888D-5458074CDCEC}' />
+    </worksheet>
+    <worksheet name='Q4'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1'>Æ&#10;</run>
+          </formatted-text>
+        </title>
+        <caption>
+          <formatted-text>
+            <run>The labelled marks are correlation coefficient with and without smoking
+</run>
+          </formatted-text>
+        </caption>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sleep_Efficiency_Updated (Sleep_Efficiency_Updated)' name='federated.02dcroe1s9szfh1cuca2b12xyz8u' />
+          </datasources>
+          <datasource-dependencies datasource='federated.02dcroe1s9szfh1cuca2b12xyz8u'>
+            <column datatype='integer' name='[Age]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Alcohol consumption]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Caffeine consumption]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Exercise frequency]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Sleep duration]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Sleep efficiency]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Smoking status]' role='dimension' type='nominal' />
+            <column-instance column='[Alcohol consumption]' derivation='Avg' name='[avg:Alcohol consumption:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Caffeine consumption]' derivation='Avg' name='[avg:Caffeine consumption:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Exercise frequency]' derivation='Avg' name='[avg:Exercise frequency:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Sleep duration]' derivation='Avg' name='[avg:Sleep duration:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Age]' derivation='None' name='[none:Age:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Sleep efficiency]' derivation='None' name='[none:Sleep efficiency:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Smoking status]' derivation='None' name='[none:Smoking status:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.02dcroe1s9szfh1cuca2b12xyz8u].[none:Age:qk]' filter-group='3' included-values='in-range-or-null'>
+            <min>18</min>
+            <max>65</max>
+          </filter>
+          <slices>
+            <column>[federated.02dcroe1s9szfh1cuca2b12xyz8u].[none:Age:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.02dcroe1s9szfh1cuca2b12xyz8u].[avg:Exercise frequency:qk]' field-type='quantitative' fold='true' max='3.8316971279373369' min='0.0' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.02dcroe1s9szfh1cuca2b12xyz8u].[none:Sleep efficiency:qk]' field-type='quantitative' max='1.0289122950029395' min='0.0' range-type='fixed' scope='rows' type='space' />
+            <encoding attr='space' class='0' field='[federated.02dcroe1s9szfh1cuca2b12xyz8u].[avg:Sleep duration:qk]' field-type='quantitative' fold='true' max='9.5717783505154657' min='0.0' range-type='fixed' scope='cols' type='space' />
+            <format attr='title' class='0' field='[federated.02dcroe1s9szfh1cuca2b12xyz8u].[avg:Alcohol consumption:qk]' scope='cols' value='Avg. Alcohol consumption (Oz)' />
+            <encoding attr='space' class='0' field='[federated.02dcroe1s9szfh1cuca2b12xyz8u].[avg:Alcohol consumption:qk]' field-type='quantitative' max='5.4229559748427674' min='0.0' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.02dcroe1s9szfh1cuca2b12xyz8u].[avg:Caffeine consumption:qk]' field-type='quantitative' max='66.522519582245437' min='0.0' range-type='fixed' scope='cols' type='space' />
+            <format attr='title' class='0' field='[federated.02dcroe1s9szfh1cuca2b12xyz8u].[avg:Caffeine consumption:qk]' scope='cols' value='Avg. Caffeine consumption (mg)' />
+            <format attr='title' class='0' field='[federated.02dcroe1s9szfh1cuca2b12xyz8u].[avg:Sleep duration:qk]' scope='cols' value='Avg. Sleep duration (Hr)' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='size' field='[federated.02dcroe1s9szfh1cuca2b12xyz8u].[none:Age:qk]' field-type='quantitative' max-size='1' min-size='0' type='centersize' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='in-tooltip' field='[federated.02dcroe1s9szfh1cuca2b12xyz8u].[none:Age:qk]' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='6' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <color column='[federated.02dcroe1s9szfh1cuca2b12xyz8u].[:Measure Names]' />
+            </encodings>
+            <trendline enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='linear' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='7' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.02dcroe1s9szfh1cuca2b12xyz8u].[avg:Alcohol consumption:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.02dcroe1s9szfh1cuca2b12xyz8u].[:Measure Names]' />
+            </encodings>
+            <trendline enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='linear' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-color' value='#e15759' />
+                <format attr='size' value='1' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='9' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.02dcroe1s9szfh1cuca2b12xyz8u].[avg:Exercise frequency:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.02dcroe1s9szfh1cuca2b12xyz8u].[:Measure Names]' />
+            </encodings>
+            <trendline enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='linear' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#f28e2b' />
+                <format attr='mark-labels-cull' value='false' />
+                <format attr='mark-labels-mode' value='selection' />
+                <format attr='size' value='1' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='10' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.02dcroe1s9szfh1cuca2b12xyz8u].[avg:Caffeine consumption:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.02dcroe1s9szfh1cuca2b12xyz8u].[:Measure Names]' />
+            </encodings>
+            <trendline enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='linear' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='size' value='1' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='11' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.02dcroe1s9szfh1cuca2b12xyz8u].[avg:Sleep duration:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <color column='[federated.02dcroe1s9szfh1cuca2b12xyz8u].[:Measure Names]' />
+            </encodings>
+            <trendline enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='linear' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.02dcroe1s9szfh1cuca2b12xyz8u].[none:Sleep efficiency:qk]</rows>
+        <cols>([federated.02dcroe1s9szfh1cuca2b12xyz8u].[avg:Alcohol consumption:qk] + ([federated.02dcroe1s9szfh1cuca2b12xyz8u].[avg:Exercise frequency:qk] + ([federated.02dcroe1s9szfh1cuca2b12xyz8u].[avg:Caffeine consumption:qk] + [federated.02dcroe1s9szfh1cuca2b12xyz8u].[avg:Sleep duration:qk])))</cols>
+        <pages>
+          <column>[federated.02dcroe1s9szfh1cuca2b12xyz8u].[none:Smoking status:nk]</column>
+        </pages>
+      </table>
+      <simple-id uuid='{9CB7966E-D02B-43F9-A6EA-8B2568BA2158}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='NVNSE Dashboard'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontsize='15'>Nature vs. Nurture in Sleep Efficiency</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <datasources>
+        <datasource caption='Sleep_Efficiency_Updated (Sleep_Efficiency_Updated)' name='federated.02dcroe1s9szfh1cuca2b12xyz8u' />
+      </datasources>
+      <datasource-dependencies datasource='federated.02dcroe1s9szfh1cuca2b12xyz8u'>
+        <column datatype='integer' name='[Age]' role='measure' type='quantitative' />
+        <column-instance column='[Age]' derivation='None' name='[none:Age:qk]' pivot='key' type='quantitative' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='71' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='98000' id='61' param='horz' type-v2='layout-flow' w='98400' x='800' y='1000'>
+              <zone h='98000' id='56' param='vert' type-v2='layout-flow' w='82400' x='800' y='1000'>
+                <zone h='98000' id='12' type-v2='layout-basic' w='82400' x='800' y='1000'>
+                  <zone h='53453' id='3' name='Q1' w='42123' x='41077' y='1000'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='48995' id='6' name='Q3' w='40277' x='800' y='1000'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='44547' id='9' name='Q2' w='42123' x='41077' y='54453'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='49005' id='22' name='Q4' w='40277' x='800' y='49995'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                </zone>
+              </zone>
+              <zone fixed-size='160' h='98000' id='60' is-fixed='true' layout-strategy-id='distribute-evenly' param='vert' type-v2='layout-flow' w='16000' x='83200' y='1000' />
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone forceUpdate='true' h='99500' id='80' param='[com.starschema.extension.react.annotation].[1.1.0].[https://extensions.tableauusercontent.com/sandbox/lets-annotate/index.html]' type-v2='dashboard-object' w='83100' x='300' y='125'>
+          <add-in add-in-id='com.starschema.extension.react.annotation' extension-url='https://extensions.tableauusercontent.com/sandbox/lets-annotate/index.html' extension-version='1.1.0' instance-id='92FF4AA4569F43ADBF8C9B89EA765D69'>
+            <instance-settings>
+              <setting key='annotationColor' value='#2ebd11' />
+              <setting key='annotationData' value='[{&quot;annotationType&quot;:&quot;AnnotationCallout&quot;,&quot;color&quot;:&quot;#2ebd11&quot;,&quot;strokeWidth&quot;:&quot;.5&quot;,&quot;dashArray&quot;:&quot;0&quot;,&quot;visibility&quot;:&quot;yes&quot;,&quot;key&quot;:&quot;53b72165-105c-4ce2-921c-2e85b798516d&quot;,&quot;id&quot;:&quot;53b72165-105c-4ce2-921c-2e85b798516d&quot;,&quot;x&quot;:738,&quot;y&quot;:173,&quot;dx&quot;:16,&quot;dy&quot;:16,&quot;connector&quot;:{&quot;type&quot;:&quot;elbow&quot;,&quot;curveString&quot;:&quot;curveCatmullRom&quot;,&quot;points&quot;:0,&quot;end&quot;:&quot;none&quot;,&quot;endScale&quot;:1,&quot;disable&quot;:&quot;no&quot;,&quot;curve&quot;:null},&quot;note&quot;:{&quot;title&quot;:&quot;Median Sleep Duration&quot;,&quot;titleColor&quot;:&quot;#000000&quot;,&quot;label&quot;:&quot;7.75&quot;,&quot;labelColor&quot;:&quot;#000000&quot;,&quot;padding&quot;:5,&quot;wrap&quot;:50,&quot;bgPadding&quot;:0,&quot;orientation&quot;:&quot;topBottom&quot;,&quot;lineType&quot;:&quot;horizontal&quot;,&quot;align&quot;:&quot;dynamic&quot;,&quot;textAnchor&quot;:null,&quot;disable&quot;:&quot;no&quot;},&quot;subject&quot;:{&quot;width&quot;:0,&quot;height&quot;:0,&quot;radius&quot;:0,&quot;radiusPadding&quot;:0,&quot;innerRadius&quot;:0,&quot;outerRadius&quot;:0,&quot;depth&quot;:0,&quot;type&quot;:&quot;square&quot;,&quot;text&quot;:&quot;&quot;,&quot;fill&quot;:&quot;#000000&quot;,&quot;fillOpacity&quot;:0},&quot;editMode&quot;:true,&quot;disable&quot;:&quot;no&quot;},{&quot;annotationType&quot;:&quot;AnnotationCallout&quot;,&quot;color&quot;:&quot;#ff0004&quot;,&quot;strokeWidth&quot;:&quot;.5&quot;,&quot;dashArray&quot;:&quot;0&quot;,&quot;visibility&quot;:&quot;yes&quot;,&quot;key&quot;:&quot;2a8b5af5-a638-469f-8198-cab0df5044c6&quot;,&quot;id&quot;:&quot;2a8b5af5-a638-469f-8198-cab0df5044c6&quot;,&quot;x&quot;:557,&quot;y&quot;:180,&quot;dx&quot;:22,&quot;dy&quot;:23,&quot;connector&quot;:{&quot;type&quot;:&quot;elbow&quot;,&quot;curveString&quot;:&quot;curveCatmullRom&quot;,&quot;points&quot;:0,&quot;end&quot;:&quot;none&quot;,&quot;endScale&quot;:1,&quot;disable&quot;:&quot;no&quot;,&quot;curve&quot;:null},&quot;note&quot;:{&quot;title&quot;:&quot;Median Sleep Duration&quot;,&quot;titleColor&quot;:&quot;#000000&quot;,&quot;label&quot;:&quot;7.5&quot;,&quot;labelColor&quot;:&quot;#000000&quot;,&quot;padding&quot;:0,&quot;wrap&quot;:50,&quot;bgPadding&quot;:0,&quot;orientation&quot;:&quot;topBottom&quot;,&quot;lineType&quot;:&quot;horizontal&quot;,&quot;align&quot;:&quot;dynamic&quot;,&quot;textAnchor&quot;:null,&quot;disable&quot;:&quot;no&quot;},&quot;subject&quot;:{&quot;width&quot;:0,&quot;height&quot;:0,&quot;radius&quot;:0,&quot;radiusPadding&quot;:0,&quot;innerRadius&quot;:0,&quot;outerRadius&quot;:0,&quot;depth&quot;:0,&quot;type&quot;:&quot;square&quot;,&quot;text&quot;:&quot;&quot;,&quot;fill&quot;:&quot;#000000&quot;,&quot;fillOpacity&quot;:0},&quot;editMode&quot;:true,&quot;disable&quot;:&quot;no&quot;,&quot;visibiity&quot;:&quot;yes&quot;}]' />
+              <setting key='annotationNoteAlign' value='dynamic' />
+              <setting key='annotationNoteBgPadding' value='0' />
+              <setting key='annotationNoteDisable' value='no' />
+              <setting key='annotationNoteLabel' value='7.75' />
+              <setting key='annotationNoteLabelColor' value='#000000' />
+              <setting key='annotationNoteLineType' value='horizontal' />
+              <setting key='annotationNoteOrientation' value='topBottom' />
+              <setting key='annotationNotePadding' value='5' />
+              <setting key='annotationNoteTextAnchor' value='null' />
+              <setting key='annotationNoteTitle' value='Median Sleep Duration' />
+              <setting key='annotationNoteTitleColor' value='#000000' />
+              <setting key='annotationNoteWrap' value='50' />
+              <setting key='annotationPassThroughMode' value='yes' />
+              <setting key='annotationShowControls' value='yes' />
+              <setting key='annotationStrokeDasharray' value='0' />
+              <setting key='annotationStrokeWidth' value='.5' />
+              <setting key='annotationSubjectBadgeText' value='' />
+              <setting key='annotationSubjectBracketType' value='square' />
+              <setting key='annotationSubjectDepth' value='0' />
+              <setting key='annotationSubjectDisable' value='no' />
+              <setting key='annotationSubjectFill' value='#000000' />
+              <setting key='annotationSubjectFillOpacity' value='0' />
+              <setting key='annotationSubjectHeight' value='0' />
+              <setting key='annotationSubjectInnerRadius' value='0' />
+              <setting key='annotationSubjectOuterRadius' value='0' />
+              <setting key='annotationSubjectRadius' value='0' />
+              <setting key='annotationSubjectRadiusPadding' value='0' />
+              <setting key='annotationSubjectWidth' value='0' />
+              <setting key='annotationToDelete' value='' />
+              <setting key='annotationType' value='AnnotationCallout' />
+              <setting key='annotationVisibility' value='yes' />
+              <setting key='configNewAnnotation' value='true' />
+              <setting key='configState' value='true' />
+              <setting key='connectorCurvePoints' value='0' />
+              <setting key='connectorCurveString' value='curveCatmullRom' />
+              <setting key='connectorDisable' value='no' />
+              <setting key='connectorEnd' value='none' />
+              <setting key='connectorEndScale' value='1' />
+              <setting key='connectorType' value='elbow' />
+              <setting key='crudConfig' value='false' />
+              <setting key='disableConfig' value='false' />
+              <setting key='editMode' value='false' />
+            </instance-settings>
+            <type-settings>
+              <dashboard />
+            </type-settings>
+          </add-in>
+        </zone>
+        <zone forceUpdate='true' h='5250' id='28' type-v2='text' w='10800' x='5200' y='6500'>
+          <formatted-text>
+            <run bold='true' fontsize='12' italic='true'>Q3.</run>
+            <run>Æ&#10;</run>
+          </formatted-text>
+        </zone>
+        <zone forceUpdate='true' h='5250' id='27' type-v2='text' w='8900' x='52500' y='7250'>
+          <formatted-text>
+            <run bold='true' fontsize='12' italic='true'>Q1</run>
+            <run>Æ&#10;</run>
+          </formatted-text>
+        </zone>
+        <zone forceUpdate='true' h='45125' id='79' type-v2='text' w='12900' x='83800' y='51625'>
+          <formatted-text>
+            <run>For Q2 &amp; 4, Hover over the trendline to find the</run>
+            <run bold='true'> r^2</run>
+            <run> value.&#10;take the </run>
+            <run bold='true' italic='true'>Square Root</run>
+            <run> of this value to find </run>
+            <run bold='true' italic='true' underline='true'>Correlation Coefficient</run>
+            <run>.
+This tells the strength of the relationship between fields 
+To determine the nature of this relationship (i.e. positive or negative) look at the direction of the trend line. If it points</run>
+            <run bold='true'> upwards - positive</run>
+            <run>, if it points </run>
+            <run bold='true'>downwards - negative</run>
+            <run>Æ&#10;</run>
+          </formatted-text>
+        </zone>
+        <zone h='7250' id='66' name='Q3' pane-specification-id='0' param='[federated.02dcroe1s9szfh1cuca2b12xyz8u].[none:Gender:nk]' type-v2='color' w='14000' x='83700' y='27375' />
+        <zone h='8625' id='67' name='Q4' param='[federated.02dcroe1s9szfh1cuca2b12xyz8u].[none:Age:qk]' type-v2='filter' values='database' w='14500' x='83800' y='42250' />
+        <zone h='7250' id='65' name='Q1' pane-specification-id='0' param='[federated.02dcroe1s9szfh1cuca2b12xyz8u].[none:Smoking status:nk]' type-v2='color' w='14000' x='83600' y='34500' />
+        <zone h='11750' id='62' name='Q4' pane-specification-id='7' param='[federated.02dcroe1s9szfh1cuca2b12xyz8u].[:Measure Names]' type-v2='color' w='16000' x='83700' y='15625' />
+        <zone count='2' h='13750' id='64' name='Q4' name1='Q2' name2='Q3' synchronized='1' type-v2='currpage' w='16800' x='83300' y='1750' />
+        <zone h='2625' id='108' type-v2='dashboard-object' w='8300' x='11900' y='52500'>
+          <button action='tabdoc:goto-sheet window-id=&quot;{098F4BA3-888D-4C2E-B2BA-165B5DAE0389}&quot;' button-type='text'>
+            <button-visual-state>
+              <caption>Q4</caption>
+              <tooltip-text>Q4</tooltip-text>
+              <button-caption-font-style fontcolor='#ffffff' fontname='Tableau Bold' />
+              <format attr='background-color' value='#333333' />
+            </button-visual-state>
+          </button>
+        </zone>
+        <zone h='2375' id='109' type-v2='dashboard-object' w='7700' x='74500' y='47500'>
+          <button action='tabdoc:goto-sheet window-id=&quot;{152A2F89-65F4-4E53-8192-27AEED1CD9C0}&quot;' button-type='text'>
+            <button-visual-state>
+              <caption>Q2</caption>
+              <button-caption-font-style fontcolor='#ffffff' fontname='Tableau Bold' />
+              <format attr='background-color' value='#333333' />
+            </button-visual-state>
+          </button>
+        </zone>
+        <zone h='2125' id='110' type-v2='dashboard-object' w='7500' x='12500' y='5125'>
+          <button action='tabdoc:goto-sheet window-id=&quot;{3D932C98-EF7E-4859-96C1-C3D1ECFB4151}&quot;' button-type='text'>
+            <button-visual-state>
+              <caption>Q3</caption>
+              <button-caption-font-style fontcolor='#ffffff' fontname='Tableau Bold' />
+              <format attr='background-color' value='#333333' />
+            </button-visual-state>
+          </button>
+        </zone>
+        <zone h='2625' id='111' type-v2='dashboard-object' w='8700' x='71900' y='4750'>
+          <button action='tabdoc:goto-sheet window-id=&quot;{D36A6897-F100-4836-9007-4E3F6B5455F3}&quot;' button-type='text'>
+            <button-visual-state>
+              <caption>Q1</caption>
+              <button-caption-font-style fontcolor='#ffffff' fontname='Tableau Bold' />
+              <format attr='background-color' value='#333333' />
+            </button-visual-state>
+          </button>
+        </zone>
+        <zone fixed-size='24' h='8625' id='72' is-fixed='true' type-v2='title' w='18500' x='36100' y='1000' />
+      </zones>
+      <devicelayouts>
+        <devicelayout name='Desktop'>
+          <layout-options>
+            <title>
+              <formatted-text>
+                <run bold='true' fontalignment='1' fontsize='15'>Nature vs. Nurture in Sleep Efficiency</run>
+              </formatted-text>
+            </title>
+          </layout-options>
+          <zones>
+            <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='71' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+                <zone h='98000' id='61' param='horz' type-v2='layout-flow' w='98400' x='800' y='1000'>
+                  <zone h='98000' id='56' param='vert' type-v2='layout-flow' w='82400' x='800' y='1000'>
+                    <zone h='98000' id='12' type-v2='layout-basic' w='82400' x='800' y='1000'>
+                      <zone h='53453' id='3' name='Q1' w='42123' x='41077' y='1000'>
+                        <zone-style>
+                          <format attr='border-color' value='#000000' />
+                          <format attr='border-style' value='none' />
+                          <format attr='border-width' value='0' />
+                          <format attr='margin' value='4' />
+                        </zone-style>
+                      </zone>
+                      <zone h='48995' id='6' name='Q3' w='40277' x='800' y='1000'>
+                        <zone-style>
+                          <format attr='border-color' value='#000000' />
+                          <format attr='border-style' value='none' />
+                          <format attr='border-width' value='0' />
+                          <format attr='margin' value='4' />
+                        </zone-style>
+                      </zone>
+                      <zone h='44547' id='9' name='Q2' w='42123' x='41077' y='54453'>
+                        <zone-style>
+                          <format attr='border-color' value='#000000' />
+                          <format attr='border-style' value='none' />
+                          <format attr='border-width' value='0' />
+                          <format attr='margin' value='4' />
+                        </zone-style>
+                      </zone>
+                      <zone h='49005' id='22' name='Q4' w='40277' x='800' y='49995'>
+                        <zone-style>
+                          <format attr='border-color' value='#000000' />
+                          <format attr='border-style' value='none' />
+                          <format attr='border-width' value='0' />
+                          <format attr='margin' value='4' />
+                        </zone-style>
+                      </zone>
+                    </zone>
+                  </zone>
+                  <zone fixed-size='160' h='98000' id='60' is-fixed='true' layout-strategy-id='distribute-evenly' param='vert' type-v2='layout-flow' w='16000' x='83200' y='1000' />
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+            <zone forceUpdate='true' h='99500' id='80' param='[com.starschema.extension.react.annotation].[1.1.0].[https://extensions.tableauusercontent.com/sandbox/lets-annotate/index.html]' type-v2='dashboard-object' w='83100' x='300' y='125'>
+              <add-in add-in-id='com.starschema.extension.react.annotation' extension-url='https://extensions.tableauusercontent.com/sandbox/lets-annotate/index.html' extension-version='1.1.0' instance-id='92FF4AA4569F43ADBF8C9B89EA765D69'>
+                <instance-settings>
+                  <setting key='annotationColor' value='#2ebd11' />
+                  <setting key='annotationData' value='[{&quot;annotationType&quot;:&quot;AnnotationCallout&quot;,&quot;color&quot;:&quot;#2ebd11&quot;,&quot;strokeWidth&quot;:&quot;.5&quot;,&quot;dashArray&quot;:&quot;0&quot;,&quot;visibility&quot;:&quot;yes&quot;,&quot;key&quot;:&quot;53b72165-105c-4ce2-921c-2e85b798516d&quot;,&quot;id&quot;:&quot;53b72165-105c-4ce2-921c-2e85b798516d&quot;,&quot;x&quot;:738,&quot;y&quot;:173,&quot;dx&quot;:16,&quot;dy&quot;:16,&quot;connector&quot;:{&quot;type&quot;:&quot;elbow&quot;,&quot;curveString&quot;:&quot;curveCatmullRom&quot;,&quot;points&quot;:0,&quot;end&quot;:&quot;none&quot;,&quot;endScale&quot;:1,&quot;disable&quot;:&quot;no&quot;,&quot;curve&quot;:null},&quot;note&quot;:{&quot;title&quot;:&quot;Median Sleep Duration&quot;,&quot;titleColor&quot;:&quot;#000000&quot;,&quot;label&quot;:&quot;7.75&quot;,&quot;labelColor&quot;:&quot;#000000&quot;,&quot;padding&quot;:5,&quot;wrap&quot;:50,&quot;bgPadding&quot;:0,&quot;orientation&quot;:&quot;topBottom&quot;,&quot;lineType&quot;:&quot;horizontal&quot;,&quot;align&quot;:&quot;dynamic&quot;,&quot;textAnchor&quot;:null,&quot;disable&quot;:&quot;no&quot;},&quot;subject&quot;:{&quot;width&quot;:0,&quot;height&quot;:0,&quot;radius&quot;:0,&quot;radiusPadding&quot;:0,&quot;innerRadius&quot;:0,&quot;outerRadius&quot;:0,&quot;depth&quot;:0,&quot;type&quot;:&quot;square&quot;,&quot;text&quot;:&quot;&quot;,&quot;fill&quot;:&quot;#000000&quot;,&quot;fillOpacity&quot;:0},&quot;editMode&quot;:true,&quot;disable&quot;:&quot;no&quot;},{&quot;annotationType&quot;:&quot;AnnotationCallout&quot;,&quot;color&quot;:&quot;#ff0004&quot;,&quot;strokeWidth&quot;:&quot;.5&quot;,&quot;dashArray&quot;:&quot;0&quot;,&quot;visibility&quot;:&quot;yes&quot;,&quot;key&quot;:&quot;2a8b5af5-a638-469f-8198-cab0df5044c6&quot;,&quot;id&quot;:&quot;2a8b5af5-a638-469f-8198-cab0df5044c6&quot;,&quot;x&quot;:557,&quot;y&quot;:180,&quot;dx&quot;:22,&quot;dy&quot;:23,&quot;connector&quot;:{&quot;type&quot;:&quot;elbow&quot;,&quot;curveString&quot;:&quot;curveCatmullRom&quot;,&quot;points&quot;:0,&quot;end&quot;:&quot;none&quot;,&quot;endScale&quot;:1,&quot;disable&quot;:&quot;no&quot;,&quot;curve&quot;:null},&quot;note&quot;:{&quot;title&quot;:&quot;Median Sleep Duration&quot;,&quot;titleColor&quot;:&quot;#000000&quot;,&quot;label&quot;:&quot;7.5&quot;,&quot;labelColor&quot;:&quot;#000000&quot;,&quot;padding&quot;:0,&quot;wrap&quot;:50,&quot;bgPadding&quot;:0,&quot;orientation&quot;:&quot;topBottom&quot;,&quot;lineType&quot;:&quot;horizontal&quot;,&quot;align&quot;:&quot;dynamic&quot;,&quot;textAnchor&quot;:null,&quot;disable&quot;:&quot;no&quot;},&quot;subject&quot;:{&quot;width&quot;:0,&quot;height&quot;:0,&quot;radius&quot;:0,&quot;radiusPadding&quot;:0,&quot;innerRadius&quot;:0,&quot;outerRadius&quot;:0,&quot;depth&quot;:0,&quot;type&quot;:&quot;square&quot;,&quot;text&quot;:&quot;&quot;,&quot;fill&quot;:&quot;#000000&quot;,&quot;fillOpacity&quot;:0},&quot;editMode&quot;:true,&quot;disable&quot;:&quot;no&quot;,&quot;visibiity&quot;:&quot;yes&quot;}]' />
+                  <setting key='annotationNoteAlign' value='dynamic' />
+                  <setting key='annotationNoteBgPadding' value='0' />
+                  <setting key='annotationNoteDisable' value='no' />
+                  <setting key='annotationNoteLabel' value='7.75' />
+                  <setting key='annotationNoteLabelColor' value='#000000' />
+                  <setting key='annotationNoteLineType' value='horizontal' />
+                  <setting key='annotationNoteOrientation' value='topBottom' />
+                  <setting key='annotationNotePadding' value='5' />
+                  <setting key='annotationNoteTextAnchor' value='null' />
+                  <setting key='annotationNoteTitle' value='Median Sleep Duration' />
+                  <setting key='annotationNoteTitleColor' value='#000000' />
+                  <setting key='annotationNoteWrap' value='50' />
+                  <setting key='annotationPassThroughMode' value='yes' />
+                  <setting key='annotationShowControls' value='yes' />
+                  <setting key='annotationStrokeDasharray' value='0' />
+                  <setting key='annotationStrokeWidth' value='.5' />
+                  <setting key='annotationSubjectBadgeText' value='' />
+                  <setting key='annotationSubjectBracketType' value='square' />
+                  <setting key='annotationSubjectDepth' value='0' />
+                  <setting key='annotationSubjectDisable' value='no' />
+                  <setting key='annotationSubjectFill' value='#000000' />
+                  <setting key='annotationSubjectFillOpacity' value='0' />
+                  <setting key='annotationSubjectHeight' value='0' />
+                  <setting key='annotationSubjectInnerRadius' value='0' />
+                  <setting key='annotationSubjectOuterRadius' value='0' />
+                  <setting key='annotationSubjectRadius' value='0' />
+                  <setting key='annotationSubjectRadiusPadding' value='0' />
+                  <setting key='annotationSubjectWidth' value='0' />
+                  <setting key='annotationToDelete' value='' />
+                  <setting key='annotationType' value='AnnotationCallout' />
+                  <setting key='annotationVisibility' value='yes' />
+                  <setting key='configNewAnnotation' value='true' />
+                  <setting key='configState' value='true' />
+                  <setting key='connectorCurvePoints' value='0' />
+                  <setting key='connectorCurveString' value='curveCatmullRom' />
+                  <setting key='connectorDisable' value='no' />
+                  <setting key='connectorEnd' value='none' />
+                  <setting key='connectorEndScale' value='1' />
+                  <setting key='connectorType' value='elbow' />
+                  <setting key='crudConfig' value='false' />
+                  <setting key='disableConfig' value='false' />
+                  <setting key='editMode' value='false' />
+                </instance-settings>
+                <type-settings>
+                  <dashboard />
+                </type-settings>
+              </add-in>
+            </zone>
+            <zone forceUpdate='true' h='5250' id='28' type-v2='text' w='10800' x='5200' y='6500'>
+              <formatted-text>
+                <run bold='true' fontsize='12' italic='true'>Q3.</run>
+                <run>Æ&#10;</run>
+              </formatted-text>
+            </zone>
+            <zone forceUpdate='true' h='5250' id='27' type-v2='text' w='8900' x='52500' y='7250'>
+              <formatted-text>
+                <run bold='true' fontsize='12' italic='true'>Q1</run>
+                <run>Æ&#10;</run>
+              </formatted-text>
+            </zone>
+            <zone forceUpdate='true' h='45125' id='79' type-v2='text' w='12900' x='83800' y='51625'>
+              <formatted-text>
+                <run>For Q2 &amp; 4, Hover over the trendline to find the</run>
+                <run bold='true'> r^2</run>
+                <run> value.&#10;take the </run>
+                <run bold='true' italic='true'>Square Root</run>
+                <run> of this value to find </run>
+                <run bold='true' italic='true' underline='true'>Correlation Coefficient</run>
+                <run>.
+This tells the strength of the relationship between fields 
+To determine the nature of this relationship (i.e. positive or negative) look at the direction of the trend line. If it points</run>
+                <run bold='true'> upwards - positive</run>
+                <run>, if it points </run>
+                <run bold='true'>downwards - negative</run>
+                <run>Æ&#10;</run>
+              </formatted-text>
+            </zone>
+            <zone h='7250' id='66' name='Q3' pane-specification-id='0' param='[federated.02dcroe1s9szfh1cuca2b12xyz8u].[none:Gender:nk]' type-v2='color' w='14000' x='83700' y='27375' />
+            <zone h='8625' id='67' name='Q4' param='[federated.02dcroe1s9szfh1cuca2b12xyz8u].[none:Age:qk]' type-v2='filter' values='database' w='14500' x='83800' y='42250' />
+            <zone h='7250' id='65' name='Q1' pane-specification-id='0' param='[federated.02dcroe1s9szfh1cuca2b12xyz8u].[none:Smoking status:nk]' type-v2='color' w='14000' x='83600' y='34500' />
+            <zone h='11750' id='62' name='Q4' pane-specification-id='7' param='[federated.02dcroe1s9szfh1cuca2b12xyz8u].[:Measure Names]' type-v2='color' w='16000' x='83700' y='15625' />
+            <zone count='2' h='13750' id='64' name='Q4' name1='Q2' name2='Q3' synchronized='1' type-v2='currpage' w='16800' x='83300' y='1750' />
+            <zone h='2625' id='108' type-v2='dashboard-object' w='8300' x='11900' y='52500'>
+              <button action='tabdoc:goto-sheet window-id=&quot;{098F4BA3-888D-4C2E-B2BA-165B5DAE0389}&quot;' button-type='text'>
+                <button-visual-state>
+                  <caption>Q4</caption>
+                  <tooltip-text>Q4</tooltip-text>
+                  <button-caption-font-style fontcolor='#ffffff' fontname='Tableau Bold' />
+                  <format attr='background-color' value='#333333' />
+                </button-visual-state>
+              </button>
+            </zone>
+            <zone h='2375' id='109' type-v2='dashboard-object' w='7700' x='74500' y='47500'>
+              <button action='tabdoc:goto-sheet window-id=&quot;{152A2F89-65F4-4E53-8192-27AEED1CD9C0}&quot;' button-type='text'>
+                <button-visual-state>
+                  <caption>Q2</caption>
+                  <button-caption-font-style fontcolor='#ffffff' fontname='Tableau Bold' />
+                  <format attr='background-color' value='#333333' />
+                </button-visual-state>
+              </button>
+            </zone>
+            <zone h='2125' id='110' type-v2='dashboard-object' w='7500' x='12500' y='5125'>
+              <button action='tabdoc:goto-sheet window-id=&quot;{3D932C98-EF7E-4859-96C1-C3D1ECFB4151}&quot;' button-type='text'>
+                <button-visual-state>
+                  <caption>Q3</caption>
+                  <button-caption-font-style fontcolor='#ffffff' fontname='Tableau Bold' />
+                  <format attr='background-color' value='#333333' />
+                </button-visual-state>
+              </button>
+            </zone>
+            <zone h='2625' id='111' type-v2='dashboard-object' w='8700' x='71900' y='4750'>
+              <button action='tabdoc:goto-sheet window-id=&quot;{D36A6897-F100-4836-9007-4E3F6B5455F3}&quot;' button-type='text'>
+                <button-visual-state>
+                  <caption>Q1</caption>
+                  <button-caption-font-style fontcolor='#ffffff' fontname='Tableau Bold' />
+                  <format attr='background-color' value='#333333' />
+                </button-visual-state>
+              </button>
+            </zone>
+            <zone fixed-size='24' h='8625' id='72' is-fixed='true' type-v2='title' w='18500' x='36100' y='1000' />
+          </zones>
+        </devicelayout>
+        <devicelayout active='true' name='Tablet'>
+          <layout-options>
+            <title>
+              <formatted-text>
+                <run bold='true' fontalignment='1' fontsize='15'>Nature vs. Nurture in Sleep Efficiency</run>
+              </formatted-text>
+            </title>
+          </layout-options>
+          <size sizing-mode='automatic' />
+          <zones>
+            <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97516' id='71' param='vert' type-v2='layout-flow' w='98438' x='781' y='1242'>
+                <zone h='97516' id='61' param='horz' type-v2='layout-flow' w='98438' x='781' y='1242'>
+                  <zone h='97516' id='56' param='vert' type-v2='layout-flow' w='82813' x='781' y='1242'>
+                    <zone h='97516' id='12' type-v2='layout-basic' w='82813' x='781' y='1242'>
+                      <zone h='53189' id='3' name='Q1' w='42335' x='41259' y='1242'>
+                        <zone-style>
+                          <format attr='border-color' value='#000000' />
+                          <format attr='border-style' value='none' />
+                          <format attr='border-width' value='0' />
+                          <format attr='margin' value='4' />
+                        </zone-style>
+                      </zone>
+                      <zone h='48753' id='6' name='Q3' w='40478' x='781' y='1242'>
+                        <zone-style>
+                          <format attr='border-color' value='#000000' />
+                          <format attr='border-style' value='none' />
+                          <format attr='border-width' value='0' />
+                          <format attr='margin' value='4' />
+                        </zone-style>
+                      </zone>
+                      <zone h='44327' id='9' name='Q2' w='42335' x='41259' y='54431'>
+                        <zone-style>
+                          <format attr='border-color' value='#000000' />
+                          <format attr='border-style' value='none' />
+                          <format attr='border-width' value='0' />
+                          <format attr='margin' value='4' />
+                        </zone-style>
+                      </zone>
+                      <zone h='48763' id='22' name='Q4' w='40478' x='781' y='49995'>
+                        <zone-style>
+                          <format attr='border-color' value='#000000' />
+                          <format attr='border-style' value='none' />
+                          <format attr='border-width' value='0' />
+                          <format attr='margin' value='4' />
+                        </zone-style>
+                      </zone>
+                    </zone>
+                  </zone>
+                  <zone fixed-size='160' h='97516' id='60' is-fixed='true' layout-strategy-id='distribute-evenly' param='vert' type-v2='layout-flow' w='15625' x='83594' y='1242' />
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+            <zone forceUpdate='true' h='99500' id='80' param='[com.starschema.extension.react.annotation].[1.1.0].[https://extensions.tableauusercontent.com/sandbox/lets-annotate/index.html]' type-v2='dashboard-object' w='83100' x='300' y='125'>
+              <add-in add-in-id='com.starschema.extension.react.annotation' extension-url='https://extensions.tableauusercontent.com/sandbox/lets-annotate/index.html' extension-version='1.1.0' instance-id='92FF4AA4569F43ADBF8C9B89EA765D69'>
+                <instance-settings>
+                  <setting key='annotationColor' value='#2ebd11' />
+                  <setting key='annotationData' value='[{&quot;annotationType&quot;:&quot;AnnotationCallout&quot;,&quot;color&quot;:&quot;#2ebd11&quot;,&quot;strokeWidth&quot;:&quot;.5&quot;,&quot;dashArray&quot;:&quot;0&quot;,&quot;visibility&quot;:&quot;yes&quot;,&quot;key&quot;:&quot;53b72165-105c-4ce2-921c-2e85b798516d&quot;,&quot;id&quot;:&quot;53b72165-105c-4ce2-921c-2e85b798516d&quot;,&quot;x&quot;:738,&quot;y&quot;:173,&quot;dx&quot;:16,&quot;dy&quot;:16,&quot;connector&quot;:{&quot;type&quot;:&quot;elbow&quot;,&quot;curveString&quot;:&quot;curveCatmullRom&quot;,&quot;points&quot;:0,&quot;end&quot;:&quot;none&quot;,&quot;endScale&quot;:1,&quot;disable&quot;:&quot;no&quot;,&quot;curve&quot;:null},&quot;note&quot;:{&quot;title&quot;:&quot;Median Sleep Duration&quot;,&quot;titleColor&quot;:&quot;#000000&quot;,&quot;label&quot;:&quot;7.75&quot;,&quot;labelColor&quot;:&quot;#000000&quot;,&quot;padding&quot;:5,&quot;wrap&quot;:50,&quot;bgPadding&quot;:0,&quot;orientation&quot;:&quot;topBottom&quot;,&quot;lineType&quot;:&quot;horizontal&quot;,&quot;align&quot;:&quot;dynamic&quot;,&quot;textAnchor&quot;:null,&quot;disable&quot;:&quot;no&quot;},&quot;subject&quot;:{&quot;width&quot;:0,&quot;height&quot;:0,&quot;radius&quot;:0,&quot;radiusPadding&quot;:0,&quot;innerRadius&quot;:0,&quot;outerRadius&quot;:0,&quot;depth&quot;:0,&quot;type&quot;:&quot;square&quot;,&quot;text&quot;:&quot;&quot;,&quot;fill&quot;:&quot;#000000&quot;,&quot;fillOpacity&quot;:0},&quot;editMode&quot;:true,&quot;disable&quot;:&quot;no&quot;},{&quot;annotationType&quot;:&quot;AnnotationCallout&quot;,&quot;color&quot;:&quot;#ff0004&quot;,&quot;strokeWidth&quot;:&quot;.5&quot;,&quot;dashArray&quot;:&quot;0&quot;,&quot;visibility&quot;:&quot;yes&quot;,&quot;key&quot;:&quot;2a8b5af5-a638-469f-8198-cab0df5044c6&quot;,&quot;id&quot;:&quot;2a8b5af5-a638-469f-8198-cab0df5044c6&quot;,&quot;x&quot;:557,&quot;y&quot;:180,&quot;dx&quot;:22,&quot;dy&quot;:23,&quot;connector&quot;:{&quot;type&quot;:&quot;elbow&quot;,&quot;curveString&quot;:&quot;curveCatmullRom&quot;,&quot;points&quot;:0,&quot;end&quot;:&quot;none&quot;,&quot;endScale&quot;:1,&quot;disable&quot;:&quot;no&quot;,&quot;curve&quot;:null},&quot;note&quot;:{&quot;title&quot;:&quot;Median Sleep Duration&quot;,&quot;titleColor&quot;:&quot;#000000&quot;,&quot;label&quot;:&quot;7.5&quot;,&quot;labelColor&quot;:&quot;#000000&quot;,&quot;padding&quot;:0,&quot;wrap&quot;:50,&quot;bgPadding&quot;:0,&quot;orientation&quot;:&quot;topBottom&quot;,&quot;lineType&quot;:&quot;horizontal&quot;,&quot;align&quot;:&quot;dynamic&quot;,&quot;textAnchor&quot;:null,&quot;disable&quot;:&quot;no&quot;},&quot;subject&quot;:{&quot;width&quot;:0,&quot;height&quot;:0,&quot;radius&quot;:0,&quot;radiusPadding&quot;:0,&quot;innerRadius&quot;:0,&quot;outerRadius&quot;:0,&quot;depth&quot;:0,&quot;type&quot;:&quot;square&quot;,&quot;text&quot;:&quot;&quot;,&quot;fill&quot;:&quot;#000000&quot;,&quot;fillOpacity&quot;:0},&quot;editMode&quot;:true,&quot;disable&quot;:&quot;no&quot;,&quot;visibiity&quot;:&quot;yes&quot;}]' />
+                  <setting key='annotationNoteAlign' value='dynamic' />
+                  <setting key='annotationNoteBgPadding' value='0' />
+                  <setting key='annotationNoteDisable' value='no' />
+                  <setting key='annotationNoteLabel' value='7.75' />
+                  <setting key='annotationNoteLabelColor' value='#000000' />
+                  <setting key='annotationNoteLineType' value='horizontal' />
+                  <setting key='annotationNoteOrientation' value='topBottom' />
+                  <setting key='annotationNotePadding' value='5' />
+                  <setting key='annotationNoteTextAnchor' value='null' />
+                  <setting key='annotationNoteTitle' value='Median Sleep Duration' />
+                  <setting key='annotationNoteTitleColor' value='#000000' />
+                  <setting key='annotationNoteWrap' value='50' />
+                  <setting key='annotationPassThroughMode' value='yes' />
+                  <setting key='annotationShowControls' value='yes' />
+                  <setting key='annotationStrokeDasharray' value='0' />
+                  <setting key='annotationStrokeWidth' value='.5' />
+                  <setting key='annotationSubjectBadgeText' value='' />
+                  <setting key='annotationSubjectBracketType' value='square' />
+                  <setting key='annotationSubjectDepth' value='0' />
+                  <setting key='annotationSubjectDisable' value='no' />
+                  <setting key='annotationSubjectFill' value='#000000' />
+                  <setting key='annotationSubjectFillOpacity' value='0' />
+                  <setting key='annotationSubjectHeight' value='0' />
+                  <setting key='annotationSubjectInnerRadius' value='0' />
+                  <setting key='annotationSubjectOuterRadius' value='0' />
+                  <setting key='annotationSubjectRadius' value='0' />
+                  <setting key='annotationSubjectRadiusPadding' value='0' />
+                  <setting key='annotationSubjectWidth' value='0' />
+                  <setting key='annotationToDelete' value='' />
+                  <setting key='annotationType' value='AnnotationCallout' />
+                  <setting key='annotationVisibility' value='yes' />
+                  <setting key='configNewAnnotation' value='true' />
+                  <setting key='configState' value='true' />
+                  <setting key='connectorCurvePoints' value='0' />
+                  <setting key='connectorCurveString' value='curveCatmullRom' />
+                  <setting key='connectorDisable' value='no' />
+                  <setting key='connectorEnd' value='none' />
+                  <setting key='connectorEndScale' value='1' />
+                  <setting key='connectorType' value='elbow' />
+                  <setting key='crudConfig' value='false' />
+                  <setting key='disableConfig' value='false' />
+                  <setting key='editMode' value='false' />
+                </instance-settings>
+                <type-settings>
+                  <dashboard />
+                </type-settings>
+              </add-in>
+            </zone>
+            <zone forceUpdate='true' h='45125' id='79' type-v2='text' w='12900' x='83800' y='51625'>
+              <formatted-text>
+                <run>For Q2 &amp; 4, Hover over the trendline to find the</run>
+                <run bold='true'> r^2</run>
+                <run> value.&#10;take the </run>
+                <run bold='true' italic='true'>Square Root</run>
+                <run> of this value to find </run>
+                <run bold='true' italic='true' underline='true'>Correlation Coefficient</run>
+                <run>.
+This tells the strength of the relationship between fields 
+To determine the nature of this relationship (i.e. positive or negative) look at the direction of the trend line. If it points</run>
+                <run bold='true'> upwards - positive</run>
+                <run>, if it points </run>
+                <run bold='true'>downwards - negative</run>
+                <run>Æ&#10;</run>
+              </formatted-text>
+            </zone>
+            <zone h='7250' id='66' name='Q3' pane-specification-id='0' param='[federated.02dcroe1s9szfh1cuca2b12xyz8u].[none:Gender:nk]' type-v2='color' w='14000' x='83700' y='27375' />
+            <zone h='8625' id='67' name='Q4' param='[federated.02dcroe1s9szfh1cuca2b12xyz8u].[none:Age:qk]' type-v2='filter' values='database' w='14500' x='83800' y='42250' />
+            <zone h='7250' id='65' name='Q1' pane-specification-id='0' param='[federated.02dcroe1s9szfh1cuca2b12xyz8u].[none:Smoking status:nk]' type-v2='color' w='14000' x='83600' y='34500' />
+            <zone h='11750' id='62' name='Q4' pane-specification-id='7' param='[federated.02dcroe1s9szfh1cuca2b12xyz8u].[:Measure Names]' type-v2='color' w='16000' x='83700' y='15625' />
+            <zone count='2' h='13750' id='64' name='Q4' name1='Q2' name2='Q3' synchronized='1' type-v2='currpage' w='16800' x='83300' y='1750' />
+            <zone h='2625' id='108' type-v2='dashboard-object' w='8300' x='11900' y='52500'>
+              <button action='tabdoc:goto-sheet window-id=&quot;{098F4BA3-888D-4C2E-B2BA-165B5DAE0389}&quot;' button-type='text'>
+                <button-visual-state>
+                  <caption>Q4</caption>
+                  <tooltip-text>Q4</tooltip-text>
+                  <button-caption-font-style fontcolor='#ffffff' fontname='Tableau Bold' />
+                  <format attr='background-color' value='#333333' />
+                </button-visual-state>
+              </button>
+            </zone>
+            <zone h='2375' id='109' type-v2='dashboard-object' w='7700' x='74500' y='47500'>
+              <button action='tabdoc:goto-sheet window-id=&quot;{152A2F89-65F4-4E53-8192-27AEED1CD9C0}&quot;' button-type='text'>
+                <button-visual-state>
+                  <caption>Q2</caption>
+                  <button-caption-font-style fontcolor='#ffffff' fontname='Tableau Bold' />
+                  <format attr='background-color' value='#333333' />
+                </button-visual-state>
+              </button>
+            </zone>
+            <zone h='2125' id='110' type-v2='dashboard-object' w='7500' x='12500' y='5125'>
+              <button action='tabdoc:goto-sheet window-id=&quot;{3D932C98-EF7E-4859-96C1-C3D1ECFB4151}&quot;' button-type='text'>
+                <button-visual-state>
+                  <caption>Q3</caption>
+                  <button-caption-font-style fontcolor='#ffffff' fontname='Tableau Bold' />
+                  <format attr='background-color' value='#333333' />
+                </button-visual-state>
+              </button>
+            </zone>
+            <zone h='2625' id='111' type-v2='dashboard-object' w='8700' x='71900' y='4750'>
+              <button action='tabdoc:goto-sheet window-id=&quot;{D36A6897-F100-4836-9007-4E3F6B5455F3}&quot;' button-type='text'>
+                <button-visual-state>
+                  <caption>Q1</caption>
+                  <button-caption-font-style fontcolor='#ffffff' fontname='Tableau Bold' />
+                  <format attr='background-color' value='#333333' />
+                </button-visual-state>
+              </button>
+            </zone>
+            <zone fixed-size='24' h='8625' id='72' is-fixed='true' type-v2='title' w='18500' x='36100' y='1000' />
+          </zones>
+        </devicelayout>
+        <devicelayout auto-generated='true' name='Phone'>
+          <layout-options>
+            <title>
+              <formatted-text>
+                <run bold='true' fontalignment='1' fontsize='15'>Nature vs. Nurture in Sleep Efficiency</run>
+              </formatted-text>
+            </title>
+          </layout-options>
+          <size maxheight='2150' minheight='2150' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='119' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='118' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+                <zone fixed-size='24' h='8625' id='72' type-v2='title' w='18500' x='36100' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='99500' id='80' param='[com.starschema.extension.react.annotation].[1.1.0].[https://extensions.tableauusercontent.com/sandbox/lets-annotate/index.html]' type-v2='dashboard-object' w='83100' x='300' y='125'>
+                  <add-in add-in-id='com.starschema.extension.react.annotation' extension-url='https://extensions.tableauusercontent.com/sandbox/lets-annotate/index.html' extension-version='1.1.0' instance-id='92FF4AA4569F43ADBF8C9B89EA765D69'>
+                    <instance-settings>
+                      <setting key='annotationColor' value='#2ebd11' />
+                      <setting key='annotationData' value='[{&quot;annotationType&quot;:&quot;AnnotationCallout&quot;,&quot;color&quot;:&quot;#2ebd11&quot;,&quot;strokeWidth&quot;:&quot;.5&quot;,&quot;dashArray&quot;:&quot;0&quot;,&quot;visibility&quot;:&quot;yes&quot;,&quot;key&quot;:&quot;53b72165-105c-4ce2-921c-2e85b798516d&quot;,&quot;id&quot;:&quot;53b72165-105c-4ce2-921c-2e85b798516d&quot;,&quot;x&quot;:738,&quot;y&quot;:173,&quot;dx&quot;:16,&quot;dy&quot;:16,&quot;connector&quot;:{&quot;type&quot;:&quot;elbow&quot;,&quot;curveString&quot;:&quot;curveCatmullRom&quot;,&quot;points&quot;:0,&quot;end&quot;:&quot;none&quot;,&quot;endScale&quot;:1,&quot;disable&quot;:&quot;no&quot;,&quot;curve&quot;:null},&quot;note&quot;:{&quot;title&quot;:&quot;Median Sleep Duration&quot;,&quot;titleColor&quot;:&quot;#000000&quot;,&quot;label&quot;:&quot;7.75&quot;,&quot;labelColor&quot;:&quot;#000000&quot;,&quot;padding&quot;:5,&quot;wrap&quot;:50,&quot;bgPadding&quot;:0,&quot;orientation&quot;:&quot;topBottom&quot;,&quot;lineType&quot;:&quot;horizontal&quot;,&quot;align&quot;:&quot;dynamic&quot;,&quot;textAnchor&quot;:null,&quot;disable&quot;:&quot;no&quot;},&quot;subject&quot;:{&quot;width&quot;:0,&quot;height&quot;:0,&quot;radius&quot;:0,&quot;radiusPadding&quot;:0,&quot;innerRadius&quot;:0,&quot;outerRadius&quot;:0,&quot;depth&quot;:0,&quot;type&quot;:&quot;square&quot;,&quot;text&quot;:&quot;&quot;,&quot;fill&quot;:&quot;#000000&quot;,&quot;fillOpacity&quot;:0},&quot;editMode&quot;:true,&quot;disable&quot;:&quot;no&quot;},{&quot;annotationType&quot;:&quot;AnnotationCallout&quot;,&quot;color&quot;:&quot;#ff0004&quot;,&quot;strokeWidth&quot;:&quot;.5&quot;,&quot;dashArray&quot;:&quot;0&quot;,&quot;visibility&quot;:&quot;yes&quot;,&quot;key&quot;:&quot;2a8b5af5-a638-469f-8198-cab0df5044c6&quot;,&quot;id&quot;:&quot;2a8b5af5-a638-469f-8198-cab0df5044c6&quot;,&quot;x&quot;:557,&quot;y&quot;:180,&quot;dx&quot;:22,&quot;dy&quot;:23,&quot;connector&quot;:{&quot;type&quot;:&quot;elbow&quot;,&quot;curveString&quot;:&quot;curveCatmullRom&quot;,&quot;points&quot;:0,&quot;end&quot;:&quot;none&quot;,&quot;endScale&quot;:1,&quot;disable&quot;:&quot;no&quot;,&quot;curve&quot;:null},&quot;note&quot;:{&quot;title&quot;:&quot;Median Sleep Duration&quot;,&quot;titleColor&quot;:&quot;#000000&quot;,&quot;label&quot;:&quot;7.5&quot;,&quot;labelColor&quot;:&quot;#000000&quot;,&quot;padding&quot;:0,&quot;wrap&quot;:50,&quot;bgPadding&quot;:0,&quot;orientation&quot;:&quot;topBottom&quot;,&quot;lineType&quot;:&quot;horizontal&quot;,&quot;align&quot;:&quot;dynamic&quot;,&quot;textAnchor&quot;:null,&quot;disable&quot;:&quot;no&quot;},&quot;subject&quot;:{&quot;width&quot;:0,&quot;height&quot;:0,&quot;radius&quot;:0,&quot;radiusPadding&quot;:0,&quot;innerRadius&quot;:0,&quot;outerRadius&quot;:0,&quot;depth&quot;:0,&quot;type&quot;:&quot;square&quot;,&quot;text&quot;:&quot;&quot;,&quot;fill&quot;:&quot;#000000&quot;,&quot;fillOpacity&quot;:0},&quot;editMode&quot;:true,&quot;disable&quot;:&quot;no&quot;,&quot;visibiity&quot;:&quot;yes&quot;}]' />
+                      <setting key='annotationNoteAlign' value='dynamic' />
+                      <setting key='annotationNoteBgPadding' value='0' />
+                      <setting key='annotationNoteDisable' value='no' />
+                      <setting key='annotationNoteLabel' value='7.75' />
+                      <setting key='annotationNoteLabelColor' value='#000000' />
+                      <setting key='annotationNoteLineType' value='horizontal' />
+                      <setting key='annotationNoteOrientation' value='topBottom' />
+                      <setting key='annotationNotePadding' value='5' />
+                      <setting key='annotationNoteTextAnchor' value='null' />
+                      <setting key='annotationNoteTitle' value='Median Sleep Duration' />
+                      <setting key='annotationNoteTitleColor' value='#000000' />
+                      <setting key='annotationNoteWrap' value='50' />
+                      <setting key='annotationPassThroughMode' value='yes' />
+                      <setting key='annotationShowControls' value='yes' />
+                      <setting key='annotationStrokeDasharray' value='0' />
+                      <setting key='annotationStrokeWidth' value='.5' />
+                      <setting key='annotationSubjectBadgeText' value='' />
+                      <setting key='annotationSubjectBracketType' value='square' />
+                      <setting key='annotationSubjectDepth' value='0' />
+                      <setting key='annotationSubjectDisable' value='no' />
+                      <setting key='annotationSubjectFill' value='#000000' />
+                      <setting key='annotationSubjectFillOpacity' value='0' />
+                      <setting key='annotationSubjectHeight' value='0' />
+                      <setting key='annotationSubjectInnerRadius' value='0' />
+                      <setting key='annotationSubjectOuterRadius' value='0' />
+                      <setting key='annotationSubjectRadius' value='0' />
+                      <setting key='annotationSubjectRadiusPadding' value='0' />
+                      <setting key='annotationSubjectWidth' value='0' />
+                      <setting key='annotationToDelete' value='' />
+                      <setting key='annotationType' value='AnnotationCallout' />
+                      <setting key='annotationVisibility' value='yes' />
+                      <setting key='configNewAnnotation' value='true' />
+                      <setting key='configState' value='true' />
+                      <setting key='connectorCurvePoints' value='0' />
+                      <setting key='connectorCurveString' value='curveCatmullRom' />
+                      <setting key='connectorDisable' value='no' />
+                      <setting key='connectorEnd' value='none' />
+                      <setting key='connectorEndScale' value='1' />
+                      <setting key='connectorType' value='elbow' />
+                      <setting key='crudConfig' value='false' />
+                      <setting key='disableConfig' value='false' />
+                      <setting key='editMode' value='false' />
+                    </instance-settings>
+                    <type-settings>
+                      <dashboard />
+                    </type-settings>
+                  </add-in>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='48995' id='6' is-fixed='true' name='Q3' w='40277' x='800' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='7250' id='66' name='Q3' pane-specification-id='0' param='[federated.02dcroe1s9szfh1cuca2b12xyz8u].[none:Gender:nk]' type-v2='color' w='14000' x='83700' y='27375'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='53453' id='3' is-fixed='true' name='Q1' w='42123' x='41077' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='7250' id='65' name='Q1' pane-specification-id='0' param='[federated.02dcroe1s9szfh1cuca2b12xyz8u].[none:Smoking status:nk]' type-v2='color' w='14000' x='83600' y='34500'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='2625' id='111' type-v2='dashboard-object' w='8700' x='71900' y='4750'>
+                  <button action='tabdoc:goto-sheet window-id=&quot;{D36A6897-F100-4836-9007-4E3F6B5455F3}&quot;' button-type='text'>
+                    <button-visual-state>
+                      <caption>Q1</caption>
+                      <button-caption-font-style fontcolor='#ffffff' fontname='Tableau Bold' />
+                      <format attr='background-color' value='#333333' />
+                    </button-visual-state>
+                  </button>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='2125' id='110' type-v2='dashboard-object' w='7500' x='12500' y='5125'>
+                  <button action='tabdoc:goto-sheet window-id=&quot;{3D932C98-EF7E-4859-96C1-C3D1ECFB4151}&quot;' button-type='text'>
+                    <button-visual-state>
+                      <caption>Q3</caption>
+                      <button-caption-font-style fontcolor='#ffffff' fontname='Tableau Bold' />
+                      <format attr='background-color' value='#333333' />
+                    </button-visual-state>
+                  </button>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='5250' id='28' type-v2='text' w='10800' x='5200' y='6500'>
+                  <formatted-text>
+                    <run bold='true' fontsize='12' italic='true'>Q3.</run>
+                    <run>Æ&#10;</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='5250' id='27' type-v2='text' w='8900' x='52500' y='7250'>
+                  <formatted-text>
+                    <run bold='true' fontsize='12' italic='true'>Q1</run>
+                    <run>Æ&#10;</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='2375' id='109' type-v2='dashboard-object' w='7700' x='74500' y='47500'>
+                  <button action='tabdoc:goto-sheet window-id=&quot;{152A2F89-65F4-4E53-8192-27AEED1CD9C0}&quot;' button-type='text'>
+                    <button-visual-state>
+                      <caption>Q2</caption>
+                      <button-caption-font-style fontcolor='#ffffff' fontname='Tableau Bold' />
+                      <format attr='background-color' value='#333333' />
+                    </button-visual-state>
+                  </button>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='8625' id='67' name='Q4' param='[federated.02dcroe1s9szfh1cuca2b12xyz8u].[none:Age:qk]' type-v2='filter' values='database' w='14500' x='83800' y='42250'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49005' id='22' is-fixed='true' name='Q4' w='40277' x='800' y='49995'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='11750' id='62' name='Q4' pane-specification-id='7' param='[federated.02dcroe1s9szfh1cuca2b12xyz8u].[:Measure Names]' type-v2='color' w='16000' x='83700' y='15625'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='45125' id='79' type-v2='text' w='12900' x='83800' y='51625'>
+                  <formatted-text>
+                    <run>For Q2 &amp; 4, Hover over the trendline to find the</run>
+                    <run bold='true'> r^2</run>
+                    <run> value.&#10;take the </run>
+                    <run bold='true' italic='true'>Square Root</run>
+                    <run> of this value to find </run>
+                    <run bold='true' italic='true' underline='true'>Correlation Coefficient</run>
+                    <run>.
+This tells the strength of the relationship between fields 
+To determine the nature of this relationship (i.e. positive or negative) look at the direction of the trend line. If it points</run>
+                    <run bold='true'> upwards - positive</run>
+                    <run>, if it points </run>
+                    <run bold='true'>downwards - negative</run>
+                    <run>Æ&#10;</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='2625' id='108' type-v2='dashboard-object' w='8300' x='11900' y='52500'>
+                  <button action='tabdoc:goto-sheet window-id=&quot;{098F4BA3-888D-4C2E-B2BA-165B5DAE0389}&quot;' button-type='text'>
+                    <button-visual-state>
+                      <caption>Q4</caption>
+                      <tooltip-text>Q4</tooltip-text>
+                      <button-caption-font-style fontcolor='#ffffff' fontname='Tableau Bold' />
+                      <format attr='background-color' value='#333333' />
+                    </button-visual-state>
+                  </button>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='44547' id='9' is-fixed='true' name='Q2' w='42123' x='41077' y='54453'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone count='2' h='13750' id='64' name='Q4' name1='Q2' name2='Q3' synchronized='1' type-v2='currpage' w='16800' x='83300' y='1750'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{66017ABE-0F96-457B-B19D-C2FBBFDCA5A7}' />
+    </dashboard>
+  </dashboards>
+  <windows pres-mode='true' show-side-pane='false' source-height='30'>
+    <window class='dashboard' maximized='true' name='NVNSE Dashboard'>
+      <viewpoints>
+        <viewpoint name='Q1'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Q2'>
+          <current-page>
+            <multibucket>
+              <bucket>&quot;Yes&quot;</bucket>
+            </multibucket>
+          </current-page>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Q3'>
+          <current-page>
+            <multibucket>
+              <bucket>&quot;Yes&quot;</bucket>
+            </multibucket>
+          </current-page>
+          <zoom type='entire-view' />
+          <floating-toolbar-visibility value='1' />
+        </viewpoint>
+        <viewpoint name='Q4'>
+          <current-page>
+            <multibucket>
+              <bucket>&quot;Yes&quot;</bucket>
+            </multibucket>
+          </current-page>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='108' />
+      <grid grid-overlay-mode='on' />
+      <simple-id uuid='{98A673FE-F006-484B-9E9E-653270A3E2FD}' />
+    </window>
+    <window class='worksheet' name='Q1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.02dcroe1s9szfh1cuca2b12xyz8u].[none:Smoking status:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{D36A6897-F100-4836-9007-4E3F6B5455F3}' />
+    </window>
+    <window class='worksheet' name='Q2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card type='currpage' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <current-page>
+          <multibucket>
+            <bucket>&quot;Yes&quot;</bucket>
+          </multibucket>
+        </current-page>
+      </viewpoint>
+      <simple-id uuid='{152A2F89-65F4-4E53-8192-27AEED1CD9C0}' />
+    </window>
+    <window class='worksheet' name='Q3'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='bottom'>
+          <strip size='94'>
+            <card type='caption' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.02dcroe1s9szfh1cuca2b12xyz8u].[none:Gender:nk]' type='color' />
+            <card type='currpage' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <current-page>
+          <multibucket>
+            <bucket>&quot;Yes&quot;</bucket>
+          </multibucket>
+        </current-page>
+      </viewpoint>
+      <simple-id uuid='{3D932C98-EF7E-4859-96C1-C3D1ECFB4151}' />
+    </window>
+    <window class='worksheet' name='Q4'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+        <edge name='bottom'>
+          <strip size='94'>
+            <card type='caption' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='197'>
+            <card param='[federated.02dcroe1s9szfh1cuca2b12xyz8u].[none:Age:qk]' show-domain='false' show-null-ctrls='false' type='filter' />
+            <card AVG='true' KURTOSIS='false' MAX='true' MEDIAN='true' MIN='false' QUART1='false' QUART3='false' SKEWNESS='false' STDEV='false' SUM='false' type='summary' />
+            <card type='currpage' />
+            <card pane-specification-id='7' param='[federated.02dcroe1s9szfh1cuca2b12xyz8u].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <current-page>
+          <multibucket>
+            <bucket>&quot;Yes&quot;</bucket>
+          </multibucket>
+        </current-page>
+      </viewpoint>
+      <simple-id uuid='{098F4BA3-888D-4C2E-B2BA-165B5DAE0389}' />
+    </window>
+  </windows>
+  <referenced-extensions>
+    <referenced-extension>
+      <manifest manifest-version='0.1'>
+        <dashboard-extension extension-version='1.1.0' id='com.starschema.extension.react.annotation'>
+          <default-locale>en_US</default-locale>
+          <name resource-id='name' />
+          <description>Custom annotations for your Tableau Dashboards. Leverages React Annotation created by Susie Lu.</description>
+          <author email='extensions@starschema.com' name='Starschema' organization='Starschema' website='https://starschema.com' />
+          <min-api-version>1.7</min-api-version>
+          <source-location>
+            <url>https://extensions.tableauusercontent.com/sandbox/lets-annotate/index.html</url>
+          </source-location>
+          <icon>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</icon>
+          <context-menu>
+            <configure-context-menu-item />
+          </context-menu>
+        </dashboard-extension>
+        <resources>
+          <resource id='name'>
+            <text locale='en_US'>Let&apos;s Annotate</text>
+          </resource>
+        </resources>
+      </manifest>
+      <referenced-views>
+        <referenced-view instances='1' viewId='NVNSE Dashboard' />
+      </referenced-views>
+    </referenced-extension>
+  </referenced-extensions>
+</workbook>
