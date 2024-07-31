@@ -1,40 +1,38 @@
 # Install the Shiny package from source
 options(repos = c(CRAN = "https://cloud.r-project.org"))
 install.packages("shiny")
+install.packages("readxl")
 
 # Load the shiny package
 library(shiny)
-
-# Verify the loaded version
-print(packageVersion("shiny"))
-
 library(ggplot2)
+library(readxl)
+library(dplyr)
 
-# Define URLs for the datasets
-url1 <- "https://github.com/SeanJibowu555/2358839DataVisualisation-repository/blob/8fb65634bf3d7fe44f15739f276ca6a3df969efa/Q1.csv"
-url2 <- "https://github.com/SeanJibowu555/2358839DataVisualisation-repository/blob/8fb65634bf3d7fe44f15739f276ca6a3df969efa/q2.csv"
-url3 <- "https://github.com/SeanJibowu555/2358839DataVisualisation-repository/blob/8fb65634bf3d7fe44f15739f276ca6a3df969efa/Q3.csv"
-url4 <- "https://github.com/SeanJibowu555/2358839DataVisualisation-repository/blob/8fb65634bf3d7fe44f15739f276ca6a3df969efa/Q4.csv"
+# Define the URL for the Excel file
+url <- "https://github.com/SeanJibowu555/2358839DataVisualisation-repository/blob/ae5ce13362e7f5fa9317d7e18fe285ee2173f3a3/Sleep_Efficiency_Updated.xls"
 
-# Load the datasets
-dataset1 <- read.csv(url1)
-dataset2 <- read.csv(url2)
-dataset3 <- read.csv(url3)
-dataset4 <- read.csv(url4)
+# Download and read the Excel file
+temp_file <- tempfile(fileext = ".xls")
+download.file(url, temp_file, mode = "wb")
+data <- read_excel(temp_file, sheet = "Sleep_Efficiency_Updated")
+
+if (!exists("data") || !is.data.frame(data)) {
+  stop("Data failed to load. Please check the file and URL.")
+}
+
 
 # Define the UI
 ui <- fluidPage(
-  titlePanel("Shiny App with GitHub Data"),
+  titlePanel("Sleep Data Analysis"),
   sidebarLayout(
-    sidebarPanel(
-      # UI inputs can be added here
-    ),
+    sidebarPanel(),
     mainPanel(
       tabsetPanel(
-        tabPanel("Question 1", plotOutput("plot1")),  # Add a plot output for the first question
-        tabPanel("Question 2", plotOutput("plot2")),  # Add a plot output for the second question
-        tabPanel("Question 3", plotOutput("plot3")),  # Add a plot output for the third question
-        tabPanel("Question 4", plotOutput("plot4"))   # Add a plot output for the fourth question
+        tabPanel("Question 1", plotOutput("plot1")),
+        tabPanel("Question 2", plotOutput("plot2")),
+        tabPanel("Question 3", plotOutput("plot3")),
+        tabPanel("Question 4", plotOutput("plot4"))
       )
     )
   )
@@ -45,34 +43,76 @@ server <- function(input, output) {
   
   # Render the plot for Question 1
   output$plot1 <- renderPlot({
-    ggplot(dataset1, aes(x = SmokingStatus, y = SleepDuration)) +
+    ggplot(data, aes(x = SmokingStatus, y = SleepDuration)) +
       geom_boxplot() +
       labs(title = "Sleep Duration by Smoking Status", x = "Smoking Status", y = "Sleep Duration")
   })
   
   # Render the plot for Question 2
   output$plot2 <- renderPlot({
-    ggplot(dataset2, aes(x = SomeVariable1, y = SomeVariable2)) +
-      geom_point() +
-      labs(title = "Title for Question 2 Plot", x = "X-axis Label", y = "Y-axis Label")
+    par(mfrow = c(1, 2))  # Arrange two plots side by side
+    
+    # Plot 1: Age vs Sleep Duration
+    plot(data$Age, data$SleepDuration, 
+         main = "Age vs Sleep Duration", 
+         xlab = "Age", ylab = "Sleep Duration", 
+         col = "blue", pch = 19)
+    model1 <- lm(SleepDuration ~ Age, data = data)
+    abline(model1, col = "red", lwd = 2)
+    
+    # Plot 2: Age vs SleepEfficiency
+    plot(data$Age, data$SleepEfficiency, 
+         main = "Age vs Sleep Efficiency", 
+         xlab = "Age", ylab = "Sleep Efficiency", 
+         col = "blue", pch = 19)
+    model2 <- lm(SleepEfficiency ~ Age, data = data)
+    abline(model2, col = "red", lwd = 2)
   })
   
   # Render the plot for Question 3
   output$plot3 <- renderPlot({
-    ggplot(dataset3, aes(x = SomeVariable3, y = SomeVariable4)) +
+    ggplot(data, aes(x = Gender, y = SleepEfficiency, fill = Gender)) +
       geom_bar(stat = "identity") +
-      labs(title = "Title for Question 3 Plot", x = "X-axis Label", y = "Y-axis Label")
+      labs(title = "Average Sleep Efficiency by Gender", x = "Gender", y = "Average Sleep Efficiency") +
+      theme_minimal()
   })
   
   # Render the plot for Question 4
   output$plot4 <- renderPlot({
-    ggplot(dataset4, aes(x = SomeVariable5, y = SomeVariable6)) +
-      geom_line() +
-      labs(title = "Title for Question 4 Plot", x = "X-axis Label", y = "Y-axis Label")
+    par(mfrow = c(1, 2))  # Arrange two plots side by side
+    
+    # Plot 1: Alcohol Consumption & Exercise Frequency vs Sleep Efficiency
+    plot(data$AverageAlcoholConsumption, data$SleepEfficiency, 
+         main = "Alcohol Consumption vs Sleep Efficiency", 
+         xlab = "Average Alcohol Consumption", ylab = "Sleep Efficiency", 
+         col = "green", pch = 19)
+    model3 <- lm(SleepEfficiency ~ AverageAlcoholConsumption, data = data)
+    abline(model3, col = "red", lwd = 2)
+    
+    plot(data$ExerciseFrequency, data$SleepEfficiency, 
+         main = "Exercise Frequency vs Sleep Efficiency", 
+         xlab = "Average Exercise Frequency", ylab = "Sleep Efficiency", 
+         col = "purple
+    model4 <- lm(SleepEfficiency ~ ExerciseFrequency, data = data)
+    abline(model4, col = "red", lwd = 2)
+    
+    # Plot 2: Sleep Duration & Caffeine Consumption vs Sleep Efficiency
+    plot(data$SleepDuration, data$SleepEfficiency, 
+         main = "Sleep Duration vs Sleep Efficiency", 
+         xlab = "Sleep Duration", ylab = "Sleep Efficiency", 
+         col = "orange", pch = 19)
+    model5 <- lm(SleepEfficiency ~ SleepDuration, data = data)
+    abline(model5, col = "red", lwd = 2)
+    
+    plot(data$CaffeineConsumption, data$SleepEfficiency, 
+         main = "Caffeine Consumption vs Sleep Efficiency", 
+         xlab = "Average Caffeine Consumption", ylab = "Sleep Efficiency", 
+         col = "brown", pch = 19)
+    model6 <- lm(SleepEfficiency ~ CaffeineConsumption, data = data)
+    abline(model6, col = "red", lwd = 2)
   })
 }
 
 # Create Shiny app
 shinyApp(ui = ui, server = server)
 
-     
