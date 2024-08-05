@@ -7,6 +7,20 @@ library(ggplot2)
 library(readxl)
 library(dplyr)
 library(gridExtra)
+library(rsconnect)
+
+ 
+
+rsconnect::setAccountInfo(name='seanjibowu', token='865698C544BFEA82653A7A18EB9C6317', secret='WKWY0YCktuPF4vbJS9v7Qv/UA2QEA4iT1m/Sj7zs')
+
+# Clone the GitHub repository (ensure git is installed on your system)
+system("git clone https://github.com/SeanJibowu555/2358839DataVisualisation-repository.git")
+setwd("2358839DataVisualisation-repository")
+
+rsconnect::deployApp(
+  appFiles = c("283359ShinyImplementation.rmd", "Sleep_Efficiency_Updated.xls"),
+  appName = "SleepDataAnalysisApp"
+)
 
 
 # Define the URL for the raw file and download the file
