@@ -18,7 +18,7 @@ system("git clone https://github.com/SeanJibowu555/2358839DataVisualisation-repo
 setwd("2358839DataVisualisation-repository")
 
 rsconnect::deployApp(
-  appFiles = c("283359ShinyImplementation.rmd", "Sleep_Efficiency_Updated.xls"),
+  appFiles = c("283359ShinyImplementation.R", "Sleep_Efficiency_Updated.xls"),
   appName = "SleepDataAnalysisApp"
 )
 
